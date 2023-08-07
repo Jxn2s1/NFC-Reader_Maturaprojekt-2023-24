@@ -1,3 +1,4 @@
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
@@ -39,6 +40,24 @@ public class OutputData {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
+    public String readJsonFromFile() {
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            File inputFile = new File("Output.json");
+            Map<String, Object> jsonMap = objectMapper.readValue(inputFile, new TypeReference<Map<String, Object>>() {});
+
+            // Update the class fields based on the content of the JSON file
+            outputString = (String) jsonMap.get("outputString");
+            numberOfData = (int) jsonMap.get("numberOfData");
+
+            // Format and return the JSON content
+            return objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonMap);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
 }

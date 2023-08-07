@@ -5,6 +5,18 @@ public class Main {
 
         //Aufruf der Klasse Output und der Funktion welche die Daten formatiert in die Console ausgibt
         OutputData outputData = new OutputData(nfcData);
-        outputData.output();
+        outputData.outputToJson();
+
+        try {
+            // Read the modified JSON content and output it
+            String modifiedJsonContent = outputData.readJsonFromFile();
+            System.out.println("Modified JSON content:\n" + modifiedJsonContent);
+
+            Thread.sleep(15000);
+            System.out.println("After waiting for 15 seconds!");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
+
 }
