@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>NFC-READER</title>
-</head>
-
-<style>
 div.header label {
 font-family: Arial;
 font-size: 22px;
@@ -27,9 +19,3 @@ text-transform: uppercase;
 color: #ff1a1a;
 background-color: #ffffff;
 }
-</style>
-
-<body>
-<script src="Frontend.js"> </script>
-</body>
-</html>
