@@ -1,20 +1,17 @@
 public class Main {
     public static void main(String[] args) {
+        OutputData justToClear = new OutputData();
+        justToClear.clearJsonFile();
 
-        //Übergangsmäßige Datei welche den Output der NFC-Chips simuliert
-        ExampleNfcData nfcData = new ExampleNfcData(1, "This is the first set of Data", "have fun using it", "just for test purposes");
+        // Übergangsmäßige Dateien welche den Output der NFC-Chips simulieren
+        String nfcData[] = {"This is the first set of Data", "have fun using it", "just for test purposes"};
 
-        OutputData outputData = new OutputData(nfcData);
-
-        outputData.outputToJson();
-
-        //Pausiert das Programm für 15 Sekunden um die Output.json Datei einsehen zu können
-        /*try {
-            Thread.sleep(15000);
-            System.out.println("After waiting for 15 seconds!");
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        int i = 0;
+        for (String data : nfcData) {
+            OutputData outputData = new OutputData(nfcData[i], i);
+            outputData.outputToJson();
+            i++;
         }
-    */
+
     }
 }

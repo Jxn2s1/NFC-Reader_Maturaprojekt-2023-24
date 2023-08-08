@@ -1,1 +1,14 @@
-{"numberOfData":1,"outputString":"Data number: 1 contains: This is the first set of Data , have fun using it and just for test purposes."}
+{
+  "Data 1" : {
+    "outputString" : "This is the first set of Data",
+    "numberOfData" : 1
+  },
+  "Data 2" : {
+    "outputString" : "have fun using it",
+    "numberOfData" : 2
+  },
+  "Data 3" : {
+    "outputString" : "just for test purposes",
+    "numberOfData" : 3
+  }
+}
