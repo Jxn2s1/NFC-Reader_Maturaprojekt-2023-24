@@ -42,7 +42,7 @@ public class OutputData {
             jsonNode.set(String.valueOf("Data " + numberOfData), newDataNode);
 
             objectMapper.writeValue(outputFile, jsonNode);
-            System.out.println("Data appended to Output.json successfully.\n");
+            System.out.println("Data " + numberOfData + " appended to Output.json successfully.\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
