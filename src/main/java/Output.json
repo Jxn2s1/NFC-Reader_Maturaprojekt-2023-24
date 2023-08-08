@@ -10,5 +10,13 @@
   "Data 3" : {
     "outputString" : "just for test purposes",
     "numberOfData" : 3
+  },
+  "Data 4" : {
+    "outputString" : "just need a few more Datasets",
+    "numberOfData" : 4
+  },
+  "Data 5" : {
+    "outputString" : "so here we go",
+    "numberOfData" : 5
   }
 }

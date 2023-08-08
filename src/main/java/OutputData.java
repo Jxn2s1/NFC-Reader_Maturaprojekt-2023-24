@@ -4,12 +4,12 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import java.io.File;
 import java.io.IOException;
 
-//Klasse zum ausgeben der formatierten Daten
+//Puts the Data in the Output.json
 public class OutputData {
     private String outputString;
     private int numberOfData;
 
-    //Constructor der OutputData Klasse
+    //Constructor of the OutputData Class
     public OutputData(String outputString, int numberOfData) {
         this.outputString = outputString;
         this.numberOfData = numberOfData;
@@ -19,6 +19,7 @@ public class OutputData {
     public OutputData() {
     }
 
+    //Function that puts the Data in the Output.json
     public void outputToJson() {
         //Puts the Content of the NFC-Chips in the Output.json
         ObjectMapper objectMapper = new ObjectMapper();
@@ -48,6 +49,7 @@ public class OutputData {
         }
     }
 
+    //Clears the Output.json (is only used once before everything else
     public void clearJsonFile() {
         File outputFile = new File("src/main/java/Output.json");
         outputFile.delete(); // Delete the file if it exists
