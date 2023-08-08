@@ -14,7 +14,7 @@ public class OutputData {
     public OutputData(ExampleNfcData data) {
         this.data = data;
         numberOfData = data.getNumberOfData();
-        outputString = "Data number: " + data.getNumberOfData() + " contains: " + data.getTextValue1() + " , " +
+        outputString = "Data number: " + data.getNumberOfData() + " contains: " + data.getTextValue1() + " and " +
                 data.getTextValue2() + " and " + data.getTextValue3() + ".";
 
         System.out.println(outputString);
