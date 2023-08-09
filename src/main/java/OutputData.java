@@ -25,7 +25,7 @@ public class OutputData {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
 
-        File outputFile = new File("src/main/java/Output.json");
+        File outputFile = new File("Output.json");
 
         try {
             ObjectNode jsonNode;
