@@ -1,4 +1,5 @@
 var o = 1;
+var w = 1;
 
 fetch('Output.json')
             .then(response => response.json())
@@ -13,6 +14,12 @@ fetch('Output.json')
                 while(o < k){
                     CreateDiv(CleanString);
                     o++;
+
+                    if(o%2 == 0)
+                    {
+                        w++;
+                    }
+
                 }
 
             });
@@ -112,7 +119,7 @@ function CreateDiv(Input){
 
     var input = document.createElement('input');
     input.value = Input[l];
-    input.id = o;
+    input.id = w;
     l++;
 
     div_header.appendChild(label);
