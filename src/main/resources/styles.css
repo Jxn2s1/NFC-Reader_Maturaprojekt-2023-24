@@ -14,3 +14,14 @@ div.header button {
     margin-left: 0.5%;
     margin-bottom: 0.5%;
 }
+
+#picture{
+    padding-top 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+}
+
