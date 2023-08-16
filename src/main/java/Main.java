@@ -20,5 +20,9 @@ public class Main {
             i++;
         }
 
+        //Automatically opens the Github Pages site and shows the Web Interface
+        OpenWebInterface openWebInterface = new OpenWebInterface();
+        //openWebInterface.open();
+
     }
 }

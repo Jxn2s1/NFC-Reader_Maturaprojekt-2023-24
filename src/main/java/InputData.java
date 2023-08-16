@@ -4,10 +4,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class InputData {
-    private String data;
-
+    //Creates a new instance of the InputData
     public InputData() {}
 
+    //Gets the content of our .txt File, filters it and puts it in an Array which we work with
     public String[] inputFromTxt() {
         String filePath = "exampleData.txt"; // Replace with the actual file path
 
