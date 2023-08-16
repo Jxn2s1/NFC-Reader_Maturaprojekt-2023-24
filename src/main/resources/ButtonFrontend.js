@@ -191,6 +191,7 @@ function CreateDiv(Input){
 var i = 0;
 
     div_header.setAttribute('class','header');
+    div_header.id = "center";
 
     label1.innerHTML = Input.OutputString;
 
@@ -205,7 +206,8 @@ var i = 0;
     newButton2.addEventListener('click', ChangeDivPrevious);
     newButton2.textContent = '<-';
 
-    RiseLogo.src = "src/main/resources/rise_logo.png"
+    RiseLogo.src = "rise_logo.png";
+    RiseLogo.id = "picture";
 
     //Instantiates all the objects in html in right order
     div_header.appendChild(label2);
