@@ -97,7 +97,7 @@ fetch('Output.json')
 //number of Paragraphs in html
 var k = 0;
 
-//Cleans the JSON to Strings
+//Cleans the JSON into an Array of "LastString" objects
 function CleanJSON(Input){
 
 var FirstLetter = Input.slice(1);
@@ -109,12 +109,19 @@ var NewMultipleJSONStrings=[];
 var z = 0;
 
 MultipleJSONStrings.forEach(element => {
+    //number of digits that are getting cut in front of the first string
     var u = 1;
 
     while(MultipleJSONStrings[0].charAt(u) != "{"){
         u++;
     }
     u++;
+
+    //if loop needed cause if a problem when the number of data is 2 digit
+    if(u==10)
+    {
+    u++;
+    }
 
     NewMultipleJSONStringsLoop[z]=MultipleJSONStrings[z].slice(u);
     NewMultipleJSONStrings[z]=MultipleJSONStrings[z].slice(u);
@@ -150,31 +157,34 @@ SingleJSONStrings.forEach(element => {
 
         if(element.charAt(0) != '"' && element.charAt(0) != '{')
         {
-            Output[i]=element;
-            i++;
-
+            LastLetterElement=element;
         }
         if(element.charAt(0) == '{'){
             var FirstLetterElement = element.slice(2);
             var LastLetterElement = FirstLetterElement.slice(0, this.length - 1);
-            Output[i]=LastLetterElement;
-            i++;
         }
         if(element.charAt(0) != '{' && element.charAt(0) == '"'){
             var FirstLetterElement = element.slice(1);
             var LastLetterElement = FirstLetterElement.slice(0, this.length - 1);
-            Output[i]=LastLetterElement;
-            i++;
         }
 
+        Output[i]=LastLetterElement;
+
+        for (let j = 0; j < LastLetterElement.length; j++) {
+            if(LastLetterElement.charAt(j)=='"')
+            {
+                Output[i]=LastLetterElement.slice(0, this.length - 1);
+            }
+          }
+
+        i++;
     })
 });
 return(Output);
 }
 
+//erstellt die div in der index.html
 function CreateDiv(Input){
-
-//console.log(input);
 
 var i = 0;
 
@@ -204,6 +214,7 @@ var i = 0;
 
 }
 
+//changes data in the html to the next one saved on "allLastStrings"
 function ChangeDivNext(){
     if(displayNum == allLastStrings.allStrings.length-1)
     {
@@ -216,6 +227,7 @@ function ChangeDivNext(){
         input1.value = allLastStrings.allStrings[displayNum].OutputText;
     }
 }
+//changes data in the html to the previous one saved on "allLastStrings"
 function ChangeDivPrevious(){
     if(displayNum == 0)
     {
