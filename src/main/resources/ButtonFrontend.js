@@ -92,7 +92,6 @@ fetch('Output.json')
                     }
                     i++;
                 });
-                console.log(allLastStrings.allStrings[9]);
             });
 
 //number of Paragraphs in html
@@ -158,23 +157,27 @@ SingleJSONStrings.forEach(element => {
 
         if(element.charAt(0) != '"' && element.charAt(0) != '{')
         {
-            Output[i]=element;
-            i++;
-
+            LastLetterElement=element;
         }
         if(element.charAt(0) == '{'){
             var FirstLetterElement = element.slice(2);
             var LastLetterElement = FirstLetterElement.slice(0, this.length - 1);
-            Output[i]=LastLetterElement;
-            i++;
         }
         if(element.charAt(0) != '{' && element.charAt(0) == '"'){
             var FirstLetterElement = element.slice(1);
             var LastLetterElement = FirstLetterElement.slice(0, this.length - 1);
-            Output[i]=LastLetterElement;
-            i++;
         }
 
+        Output[i]=LastLetterElement;
+
+        for (let j = 0; j < LastLetterElement.length; j++) {
+            if(LastLetterElement.charAt(j)=='"')
+            {
+                Output[i]=LastLetterElement.slice(0, this.length - 1);
+            }
+          }
+
+        i++;
     })
 });
 return(Output);
