@@ -9,9 +9,11 @@ var label1 = document.createElement('label');
 var input1 = document.createElement('input');
 var label2 = document.createElement('label');
 var input2 = document.createElement('input');
-var paragraph = document.createElement('p');
+var paragraph1 = document.createElement('p');
+var paragraph2= document.createElement('p');
 var newButton = document.createElement('button');
 var newButton2 = document.createElement('button');
+var RiseLogo = document.createElement('img');
 
 class LastString{
     constructor(){
@@ -189,6 +191,7 @@ function CreateDiv(Input){
 var i = 0;
 
     div_header.setAttribute('class','header');
+    div_header.id = "center";
 
     label1.innerHTML = Input.OutputString;
 
@@ -198,18 +201,28 @@ var i = 0;
 
     input2.value = Input.DataNumber;
 
-    div_header.appendChild(label2);
-    div_header.appendChild(input2);
-    div_header.appendChild(paragraph);
-    div_header.appendChild(label1);
-    div_header.appendChild(input1);
-    div_header.appendChild(paragraph);
     newButton.addEventListener('click', ChangeDivNext);
     newButton.textContent = '->';
     newButton2.addEventListener('click', ChangeDivPrevious);
     newButton2.textContent = '<-';
+
+    RiseLogo.src = "rise_logo.png";
+    RiseLogo.id = "picture";
+
+    //Instantiates all the objects in html in right order
+    div_header.appendChild(label2);
+    div_header.appendChild(input2);
+    div_header.appendChild(label1);
+    div_header.appendChild(input1);
+
+    div_header.appendChild(paragraph1);
+
     div_header.appendChild(newButton2);
     div_header.appendChild(newButton);
+
+    div_header.appendChild(paragraph2);
+
+    div_header.appendChild(RiseLogo);
     document.body.appendChild(div_header);
 
 }
