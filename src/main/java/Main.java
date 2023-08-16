@@ -14,7 +14,7 @@ public class Main {
         //Takes everything in the nfcData array and puts it though the OutputData.java
         int i = 0;
         for (String data : inputData.inputFromTxt()) {
-            System.out.println(data);
+            System.out.println(data + "\n");
             OutputData outputData = new OutputData(data, i);
             outputData.outputToJson();
             i++;

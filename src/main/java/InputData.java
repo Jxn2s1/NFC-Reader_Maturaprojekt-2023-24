@@ -6,9 +6,7 @@ import java.util.ArrayList;
 public class InputData {
     private String data;
 
-    public InputData() {
-
-    }
+    public InputData() {}
 
     public String[] inputFromTxt() {
         String filePath = "exampleData.txt"; // Replace with the actual file path
