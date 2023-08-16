@@ -198,19 +198,19 @@ var i = 0;
 
     input2.value = Input.DataNumber;
 
-    div_header.appendChild(label1);
-    div_header.appendChild(input1);
-    div_header.appendChild(paragraph);
     div_header.appendChild(label2);
     div_header.appendChild(input2);
     div_header.appendChild(paragraph);
+    div_header.appendChild(label1);
+    div_header.appendChild(input1);
+    div_header.appendChild(paragraph);
     newButton.addEventListener('click', ChangeDivNext);
-    newButton.textContent = 'NEXT!';
-    div_header.appendChild(newButton);
+    newButton.textContent = '->';
     newButton2.addEventListener('click', ChangeDivPrevious);
-        newButton2.textContent = 'PREVIOUS!';
+    newButton2.textContent = '<-';
+    div_header.appendChild(newButton2);
+    div_header.appendChild(newButton);
     document.body.appendChild(div_header);
-    document.body.appendChild(newButton2);
 
 }
 

@@ -5,7 +5,12 @@ div.header label {
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    color: #ff1a1a;
+    color: grey;
     background-color: #ffffff;
-    padding-left: 1%;
-    }
+    padding-left: 2.5%;
+    padding-right: 1%;
+}
+div.header button {
+    margin-left: 0.5%;
+    margin-bottom: 0.5%;
+}
