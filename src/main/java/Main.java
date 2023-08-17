@@ -7,19 +7,20 @@ public class Main {
         OutputData justToClear = new OutputData();
         StartInConsole startInConsole = new StartInConsole();
         justToClear.clearJsonFile();
+        startInConsole.put();
 
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
         int i = 0;
 
+        //Runs for as long as you dont type exit in the console
         while (!exit) {
             //Gets the inputData from .txt file (Not used)
             //InputData inputData = new InputData();
 
             System.out.println("Please scan NFC-Chips or type exit to quit");
             String inputData = scanner.nextLine();
-            startInConsole.put();
-            //System.out.println(inputData);
+            System.out.println(inputData);
 
             if (inputData.equals("exit")){
                 exit = true;

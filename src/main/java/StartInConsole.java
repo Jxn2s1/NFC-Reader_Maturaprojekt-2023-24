@@ -1,11 +1,9 @@
-import java.awt.AWTException;
-import java.awt.Dimension;
-import java.awt.Robot;
-import java.awt.Toolkit;
+import java.awt.*;
 import java.awt.event.InputEvent;
 
+//Puts the cursor in the console so it can start the program on its own
 public class StartInConsole {
-    public static void put() {
+    public static void put(){
         try {
             // Create a Robot instance
             Robot robot = new Robot();
@@ -26,6 +24,7 @@ public class StartInConsole {
             robot.mouseMove(x, y);
             robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
             robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+
         }
         catch (AWTException e) {
             e.printStackTrace();
