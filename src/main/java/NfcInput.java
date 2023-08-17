@@ -1,3 +1,7 @@
+
+
+//Not used in this version
+
 import java.util.Scanner;
 
 public class NfcInput {

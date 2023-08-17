@@ -14,6 +14,7 @@ public class OpenWebInterface {
         } catch (IOException | URISyntaxException e) {
             e.printStackTrace();
         }
+        System.exit(0);
     }
 
     //Contains the Link of the Website

@@ -1,42 +1,26 @@
 {
   "Data 1" : {
-    "outputString" : "1234567890",
+    "outputString" : "69f4005a",
     "numberOfData" : 1
   },
   "Data 2" : {
-    "outputString" : "0987654321",
+    "outputString" : "69f4005a",
     "numberOfData" : 2
   },
   "Data 3" : {
-    "outputString" : "0657456557",
+    "outputString" : "6935f03a",
     "numberOfData" : 3
   },
   "Data 4" : {
-    "outputString" : "4555654678",
+    "outputString" : "6907035a",
     "numberOfData" : 4
   },
   "Data 5" : {
-    "outputString" : "7557755677",
+    "outputString" : "69b0ca4a",
     "numberOfData" : 5
   },
   "Data 6" : {
-    "outputString" : "1234143569",
+    "outputString" : "6935f03a",
     "numberOfData" : 6
-  },
-  "Data 7" : {
-    "outputString" : "0978098709",
-    "numberOfData" : 7
-  },
-  "Data 8" : {
-    "outputString" : "ß285ß240ß5",
-    "numberOfData" : 8
-  },
-  "Data 9" : {
-    "outputString" : "2345342552",
-    "numberOfData" : 9
-  },
-  "Data 10" : {
-    "outputString" : "2345234523",
-    "numberOfData" : 10
   }
 }
