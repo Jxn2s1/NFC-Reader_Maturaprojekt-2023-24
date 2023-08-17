@@ -3,3 +3,8 @@ Maturaprojekt 2023/24 - Jonas Sakotnik, Gregor Christiner und Florian Neubauer i
 
 # NFC-Reader as final Projekt 2023/24
 Diploma thesis 2023/24 - Jonas Sakotnik, Gregor Christiner and Florian Neubauer in cooperation with R.I.S.E Feldbach. 
+
+Worked time:
+Gregor:     60 Hours
+Jonas:      60 Hours
+Florian:     0 Hours
