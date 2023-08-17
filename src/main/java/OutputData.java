@@ -56,7 +56,7 @@ public class OutputData {
         File outputFile = new File("src/main/resources/Output.json");
 
         try (FileWriter writer = new FileWriter(outputFile)) {
-            writer.write(""); // Write an empty string to clear the file
+            writer.write("{}"); // Write an empty string to clear the file
             System.out.println("\nJSON file cleared.\n");
         } catch (IOException e) {
             System.err.println("Error clearing JSON file: " + e.getMessage());
