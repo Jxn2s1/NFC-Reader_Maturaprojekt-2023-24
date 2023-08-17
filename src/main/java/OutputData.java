@@ -1,7 +1,9 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 //Puts the Data in the Output.json
@@ -49,11 +51,15 @@ public class OutputData {
         }
     }
 
-    //Clears the Output.json (is only used once before everything else)
+    //Clears the Output.json (is only used once before everything else
     public void clearJsonFile() {
-        File outputFile = new File("src/main/java/Output.json");
-        outputFile.delete(); // Delete the file if it exists
-        System.out.println("\nJSON file cleared\n.");
-}
+        File outputFile = new File("src/main/resources/Output.json");
 
+        try (FileWriter writer = new FileWriter(outputFile)) {
+            writer.write(""); // Write an empty string to clear the file
+            System.out.println("\nJSON file cleared.\n");
+        } catch (IOException e) {
+            System.err.println("Error clearing JSON file: " + e.getMessage());
+        }
+    }
 }
