@@ -1,25 +1,37 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
         //Clears the Output.json before starting
         OutputData justToClear = new OutputData();
+        StartInConsole startInConsole = new StartInConsole();
         justToClear.clearJsonFile();
+        startInConsole.put();
 
-        //Gets the inputData from .txt file
-        InputData inputData = new InputData();
-
-        // Übergangsmäßige Dateien welche den Output der NFC-Chips simulieren
-        /*String nfcData[] = {"This is the first set of Data", "have fun using it", "just for test purposes", "just need a few more Datasets",
-                "so here we go", "Test Test Test", "1 2 3", "4 5 6", "Test erfolgreich", "10ter Test schaut alles gut aus  "};*/
-
-        //Takes everything in the nfcData array and puts it though the OutputData.java
+        Scanner scanner = new Scanner(System.in);
+        boolean exit = false;
         int i = 0;
-        for (String data : inputData.inputFromTxt()) {
-            System.out.println(data + "\n");
-            OutputData outputData = new OutputData(data, i);
-            outputData.outputToJson();
-            i++;
+
+        //Runs for as long as you dont type exit in the console
+        while (!exit) {
+
+            System.out.println("Please scan NFC-Chips");
+            String inputData = scanner.nextLine();
+            System.out.println(inputData);
+
+            //Exits if the exit chip is scanned
+            if (inputData.equals("9abc3c04"))
+            {
+                exit = true;
+            }
+            else {
+                OutputData outputData = new OutputData(inputData, i);
+                outputData.outputToJson();
+                i++;
+            }
         }
+        scanner.close();
 
         //Automatically opens the GitHub Pages site and shows the Web Interface
         OpenWebInterface openWebInterface = new OpenWebInterface();

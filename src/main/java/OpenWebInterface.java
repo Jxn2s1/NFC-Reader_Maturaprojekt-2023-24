@@ -13,6 +13,8 @@ public class OpenWebInterface {
             System.exit(0);
         } catch (IOException | URISyntaxException e) {
             e.printStackTrace();
+            System.exit(1);
+
         }
     }
 
@@ -21,6 +23,7 @@ public class OpenWebInterface {
             //String link = "https://maturaprojekt-nfc-reader.github.io/";
             String link = "http://localhost:63342/MP_NFC-READER_2023-24/src/main/resources/index.html?_ijt=u7b0kqh2a60d74ppja13nq84l6&_ij_reload=RELOAD_ON_SAVE";
             openWebPage(link);
+        System.exit(0);
 
     }
 }

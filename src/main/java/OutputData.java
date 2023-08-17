@@ -49,7 +49,7 @@ public class OutputData {
         }
     }
 
-    //Clears the Output.json (is only used once before everything else
+    //Clears the Output.json (is only used once before everything else)
     public void clearJsonFile() {
         File outputFile = new File("src/main/java/Output.json");
         outputFile.delete(); // Delete the file if it exists
