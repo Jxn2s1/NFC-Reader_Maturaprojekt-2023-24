@@ -15,8 +15,6 @@ public class Main {
 
         //Runs for as long as you dont type exit in the console
         while (!exit) {
-            //Gets the inputData from .txt file (Not used)
-            //InputData inputData = new InputData();
 
             System.out.println("Please scan NFC-Chips");
             String inputData = scanner.nextLine();
@@ -34,19 +32,6 @@ public class Main {
             }
         }
         scanner.close();
-
-        // Übergangsmäßige Dateien welche den Output der NFC-Chips simulieren (Not used)
-        /*String nfcData[] = {"This is the first set of Data", "have fun using it", "just for test purposes", "just need a few more Datasets",
-                "so here we go", "Test Test Test", "1 2 3", "4 5 6", "Test erfolgreich", "10ter Test schaut alles gut aus  "};*/
-
-        //Takes everything in the nfcData array and puts it though the OutputData.java (Not used)
-        /*int i = 0;
-        for (String data : inputData.inputFromTxt()) {
-            System.out.println(data + "\n");
-            OutputData outputData = new OutputData(data, i);
-            outputData.outputToJson();
-            i++;
-        }*/
 
         //Automatically opens the GitHub Pages site and shows the Web Interface
         OpenWebInterface openWebInterface = new OpenWebInterface();
