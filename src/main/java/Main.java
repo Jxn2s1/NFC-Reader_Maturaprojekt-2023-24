@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+
         //Clears the Output.json before starting
         OutputData justToClear = new OutputData();
         justToClear.clearJsonFile();
@@ -20,9 +21,9 @@ public class Main {
             i++;
         }
 
-        //Automatically opens the Github Pages site and shows the Web Interface
+        //Automatically opens the GitHub Pages site and shows the Web Interface
         OpenWebInterface openWebInterface = new OpenWebInterface();
-        //openWebInterface.open();
+        openWebInterface.open();
 
     }
 }
