@@ -18,11 +18,13 @@ public class Main {
             //Gets the inputData from .txt file (Not used)
             //InputData inputData = new InputData();
 
-            System.out.println("Please scan NFC-Chips or type exit to quit");
+            System.out.println("Please scan NFC-Chips");
             String inputData = scanner.nextLine();
             System.out.println(inputData);
 
-            if (inputData.equals("exit")){
+            //Exits if the exit chip is scanned
+            if (inputData.equals("9abc3c04"))
+            {
                 exit = true;
             }
             else {
