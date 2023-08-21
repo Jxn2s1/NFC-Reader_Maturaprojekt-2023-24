@@ -1,7 +1,7 @@
-//Number what Data is displayed
+//Number what Data is displayed | needed for the buttons in ChangeDiv* functions
 var displayNum = 0;
 
-//variabels for Website creations
+//variables for Website creations | needed in CreateDiv function
 var div_header = document.createElement('div');
 var label1 = document.createElement('label');
 var input1 = document.createElement('input');
@@ -98,7 +98,7 @@ fetch('Output.json')
                 });
             });
 
-//number of Paragraphs in html
+//number of data sets in html | needed in SingleJSONStrings.forEach method
 var k = 0;
 
 //Cleans the JSON into an Array of "LastString" objects
