@@ -5,15 +5,14 @@ public class Main {
 
         //Clears the Output.json before starting
         OutputData justToClear = new OutputData();
-        StartInConsole startInConsole = new StartInConsole();
         justToClear.clearJsonFile();
-        startInConsole.put();
+        StartInConsole.put();
 
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
         int i = 0;
 
-        //Runs for as long as you dont type exit in the console
+        //Runs until Exit-Chip is scanned
         while (!exit) {
 
             System.out.println("Please scan NFC-Chips");
@@ -34,8 +33,7 @@ public class Main {
         scanner.close();
 
         //Automatically opens the GitHub Pages site and shows the Web Interface
-        OpenWebInterface openWebInterface = new OpenWebInterface();
-        openWebInterface.open();
+        OpenWebInterface.open();
 
     }
 }
