@@ -1,4 +1,4 @@
-//Number what Data is displayed | needed for the buttons in ChangeDiv* functions
+//Number what Data which is displayed on the website | needed for the buttons in ChangeDiv* functions
 var displayNum = 0;
 
 //variables for Website creations | needed in CreateDiv function
@@ -23,7 +23,7 @@ class LastString{
     }
 }
 
-//array for all the data for the labels and input boxes
+//array class for all the data for the labels and input boxes
 class AllLastStrings{
     constructor(){
         this.Strings = [];
@@ -38,9 +38,10 @@ class AllLastStrings{
     }
 }
 
+//creation of array needed for creating the website | needed in the fetch() function below
 var allLastStrings = new AllLastStrings();
 
-//reading out the data from the JSON file - will be replaced with the database-reader in future
+//reading out the data from the JSON file - will be replaced with database-reader in future
 fetch('Output.json')
             .then(response => response.json())
             .then(data => {
@@ -67,6 +68,7 @@ fetch('Output.json')
                     if(i==1)
                     {
                         lastString.OutputText = element;
+
                     }
                     if(i==2)
                     {
@@ -97,7 +99,6 @@ fetch('Output.json')
                     i++;
                 });
             });
-
 //number of data sets in html | needed in SingleJSONStrings.forEach method
 var k = 0;
 
@@ -105,18 +106,18 @@ var k = 0;
 function CleanJSON(Input){
 
 //cuts of first "{" and last "}" from the raw String, read from the JSON
-var FirstLetter = Input.slice(1);
-var LastLetter = FirstLetter.slice(0, this.length - 2);
+Input = Input.slice(1);
+Input = Input.slice(0, this.length - 2);
 
 //Splits the single raw String into multiple raw Strings
-var MultipleJSONStrings = LastLetter.split("}");
+var MultipleJSONStrings = Input.split("}");
 var NewMultipleJSONStringsLoop=[];
 var NewMultipleJSONStrings=[];
 var z = 0;
 
 MultipleJSONStrings.forEach(element => {
 
-    //number of digits that are getting cut in front of the first string
+    //number of digit's that are getting cut in front of the first string
     var u = 1;
 
     //chechs where the first "{" is to slice the String there
@@ -125,7 +126,7 @@ MultipleJSONStrings.forEach(element => {
     }
     u++;
 
-    //if loop needed cause if a problem when the number of data is 2 digit
+    //if loop needed cause if a problem when the number of digit's is greater than 1
     if(u==10)
     {
     u++;
@@ -138,7 +139,7 @@ MultipleJSONStrings.forEach(element => {
     z++;
 });
 
-//variables to sort the clean Strings into the right place
+//variables to sort the clean String's into the right place
 var SingleJSONStrings = [];
 var RAM = [];
     var t = 0;
@@ -158,12 +159,12 @@ NewMultipleJSONStringsLoop.forEach(element => {
 var Output = [];
 var i =0;
 
-//cleans the 2 Strings on the array
+//cleans the 2 String's on the array
 SingleJSONStrings.forEach(element => {
 
     k++;
 
-    //splits the 2 Strings into the final 4 raw forms
+    //splits the 2 String's into the final raw form
     var Data = element.split(":");
 
     //checks every String and cleans them up to almost final form
@@ -206,13 +207,10 @@ function CreateDiv(Input){
     //sets the values for the  labels and buttons
     div_header.setAttribute('class','header');
     div_header.id = "center";
-
     label1.innerHTML = Input.OutputString;
-
     input1.value = Input.OutputText;
 
     label2.innerHTML = Input.NumberofData;
-
     input2.value = Input.DataNumber;
 
     newButton.addEventListener('click', ChangeDivNext);
@@ -236,14 +234,15 @@ function CreateDiv(Input){
 
     //Instantiates all the objects in html in right order
     document.body.appendChild(div_header);
-
 }
 
-//changes data in the html to the next one saved on "allLastStrings"
+//changes data in the html to the next one saved on "allLastStrings" | or the the first one if on the last string
 function ChangeDivNext(){
     if(displayNum == allLastStrings.allStrings.length-1)
     {
-        alert("last data set");
+        displayNum = 0;
+        input2.value = allLastStrings.allStrings[displayNum].DataNumber;
+        input1.value = allLastStrings.allStrings[displayNum].OutputText;
     }
     else
     {
@@ -252,11 +251,13 @@ function ChangeDivNext(){
         input1.value = allLastStrings.allStrings[displayNum].OutputText;
     }
 }
-//changes data in the html to the previous one saved on "allLastStrings"
+//changes data in the html to the previous one saved on "allLastStrings" | or to the last on if on the first string
 function ChangeDivPrevious(){
     if(displayNum == 0)
     {
-        alert("first data set");
+        displayNum = allLastStrings.allStrings.length-1;
+        input2.value = allLastStrings.allStrings[displayNum].DataNumber;
+        input1.value = allLastStrings.allStrings[displayNum].OutputText;
     }
     else{
         displayNum--;
