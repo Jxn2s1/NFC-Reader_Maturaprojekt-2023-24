@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj": {}
+    "D:\\Selbst erstellte Programme\\Schule\\Maturaprojekt_2023_24\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj": {
+    "D:\\Selbst erstellte Programme\\Schule\\Maturaprojekt_2023_24\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj",
+        "projectUniqueName": "D:\\Selbst erstellte Programme\\Schule\\Maturaprojekt_2023_24\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj",
         "projectName": "NFC-Reader",
-        "projectPath": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj",
-        "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\obj\\",
+        "projectPath": "D:\\Selbst erstellte Programme\\Schule\\Maturaprojekt_2023_24\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj",
+        "packagesPath": "C:\\Users\\nflor\\.nuget\\packages\\",
+        "outputPath": "D:\\Selbst erstellte Programme\\Schule\\Maturaprojekt_2023_24\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nflor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
