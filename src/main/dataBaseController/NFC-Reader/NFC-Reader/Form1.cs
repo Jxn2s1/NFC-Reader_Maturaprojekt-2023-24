@@ -99,13 +99,23 @@ namespace NFC_Reader
 
         private void cmd_Website_Click(object sender, EventArgs e)
         {
-            Process P = new Process();
-            P.StartInfo.FileName = "notepad.exe";
-
-            P.Start();
+            const String url = "https://maturaprojekt-nfc-reader.github.io/";
+            openWebsite(url);
         }
 
-        private void creatorToolStripMenuItem_Click(object sender, EventArgs e)
+        public void openWebsite(string url)
+        {
+            try
+            {
+                Process.Start(url);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error with opening the Website: " + e.ToString());
+            }
+        }
+
+            private void creatorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Creator:\nJonas Sakotnik\nGregor Christiner\nFlorian Neubauer");
         }

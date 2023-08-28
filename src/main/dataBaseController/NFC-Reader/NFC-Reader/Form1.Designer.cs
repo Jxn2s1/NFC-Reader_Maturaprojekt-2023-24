@@ -101,7 +101,7 @@
             // 
             // cmd_delete
             // 
-            cmd_delete.Location = new Point(273, 132);
+            cmd_delete.Location = new Point(273, 182);
             cmd_delete.Name = "cmd_delete";
             cmd_delete.Size = new Size(75, 38);
             cmd_delete.TabIndex = 4;
@@ -111,7 +111,7 @@
             // 
             // cmd_delete_all
             // 
-            cmd_delete_all.Location = new Point(71, 301);
+            cmd_delete_all.Location = new Point(273, 115);
             cmd_delete_all.Name = "cmd_delete_all";
             cmd_delete_all.Size = new Size(75, 38);
             cmd_delete_all.TabIndex = 5;
@@ -121,7 +121,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(273, 198);
+            button1.Location = new Point(713, 386);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 6;
@@ -141,7 +141,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(421, 81);
+            button2.Location = new Point(713, 415);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 8;
@@ -173,7 +173,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Form1";
-            Text = "Form1";            
+            Text = "Form1";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)grid_Nfc).EndInit();

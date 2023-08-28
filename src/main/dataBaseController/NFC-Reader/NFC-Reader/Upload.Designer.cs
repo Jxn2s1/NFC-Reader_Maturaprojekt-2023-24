@@ -46,7 +46,7 @@
             // 
             // cmd_upload_DB
             // 
-            cmd_upload_DB.Location = new Point(43, 253);
+            cmd_upload_DB.Location = new Point(383, 211);
             cmd_upload_DB.Name = "cmd_upload_DB";
             cmd_upload_DB.Size = new Size(82, 36);
             cmd_upload_DB.TabIndex = 0;
@@ -65,7 +65,7 @@
             // 
             // cmd_download_DB
             // 
-            cmd_download_DB.Location = new Point(157, 253);
+            cmd_download_DB.Location = new Point(698, 360);
             cmd_download_DB.Name = "cmd_download_DB";
             cmd_download_DB.Size = new Size(90, 36);
             cmd_download_DB.TabIndex = 2;
@@ -118,7 +118,7 @@
             // 
             // Delete_DB
             // 
-            Delete_DB.Location = new Point(383, 52);
+            Delete_DB.Location = new Point(698, 402);
             Delete_DB.Name = "Delete_DB";
             Delete_DB.Size = new Size(90, 36);
             Delete_DB.TabIndex = 4;
@@ -128,7 +128,7 @@
             // 
             // cmd_Delete
             // 
-            cmd_Delete.Location = new Point(383, 126);
+            cmd_Delete.Location = new Point(383, 128);
             cmd_Delete.Name = "cmd_Delete";
             cmd_Delete.Size = new Size(90, 36);
             cmd_Delete.TabIndex = 5;
@@ -138,7 +138,7 @@
             // 
             // cmd_Delete_All
             // 
-            cmd_Delete_All.Location = new Point(383, 191);
+            cmd_Delete_All.Location = new Point(383, 41);
             cmd_Delete_All.Name = "cmd_Delete_All";
             cmd_Delete_All.Size = new Size(90, 36);
             cmd_Delete_All.TabIndex = 6;
