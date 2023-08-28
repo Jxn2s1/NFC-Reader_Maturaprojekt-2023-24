@@ -104,19 +104,19 @@ namespace NFC_Reader
 
         private void cmd_Website_Click(object sender, EventArgs e)
         {
-            /* Process P = new Process();
-             P.StartInfo.FileName = "";
+            const String url = "https://maturaprojekt-nfc-reader.github.io/";
+            openWebsite(url);
+        }
 
-             P.Start();
-             */
-            string url = "https://maturaprojekt-nfc-reader.github.io/";
+        public void openWebsite(string url)
+        {
             try
-            { 
+            {
                 Process.Start(url);
             }
-            catch (Exception ex) 
+            catch (Exception e)
             {
-                MessageBox.Show("Fehler beim Öffnen der Website!" + ex.Message + MessageBoxIcon.Error + MessageBoxButtons.OK);
+                MessageBox.Show("Error with opening the Website: " + e.ToString());
             }
         }
 
@@ -149,6 +149,11 @@ namespace NFC_Reader
             {
                 MessageBox.Show("Can not open Connection");
             }*/
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

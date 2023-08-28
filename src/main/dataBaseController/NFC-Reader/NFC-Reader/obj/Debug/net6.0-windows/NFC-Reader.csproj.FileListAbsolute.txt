@@ -142,3 +142,39 @@ D:\Selbst erstellte Programme\Schule\Maturaprojekt_2023_24\NFC-Reader_Maturaproj
 D:\Selbst erstellte Programme\Schule\Maturaprojekt_2023_24\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.pdb
 D:\Selbst erstellte Programme\Schule\Maturaprojekt_2023_24\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.genruntimeconfig.cache
 D:\Selbst erstellte Programme\Schule\Maturaprojekt_2023_24\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\ref\NFC-Reader.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.exe
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\ZstdSharp.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.AssemblyReference.cache
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC_Reader.Form1.resources
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC_Reader.Upload.resources
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.GenerateResource.cache
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.AssemblyInfoInputs.cache
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.AssemblyInfo.cs
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.CoreCompileInputs.cache
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.CopyComplete
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\refint\NFC-Reader.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.pdb
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.deps.json
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.runtimeconfig.json
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.dll
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.pdb
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.genruntimeconfig.cache
+C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\ref\NFC-Reader.dll
