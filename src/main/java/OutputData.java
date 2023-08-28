@@ -27,6 +27,7 @@ public class OutputData {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
 
+        //File outputFile = new File("src/main/dataBaseController/NFC-Reader/NFC-Reader/bin/Debug/net6.0-windows/Output.json");
         File outputFile = new File("src/main/resources/Output.json");
 
         try {
