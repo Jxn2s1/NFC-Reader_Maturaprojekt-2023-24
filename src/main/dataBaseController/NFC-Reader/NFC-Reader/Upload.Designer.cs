@@ -40,15 +40,16 @@
             Delete_DB = new Button();
             cmd_Delete = new Button();
             cmd_Delete_All = new Button();
+            btn_back = new Button();
             ((System.ComponentModel.ISupportInitialize)Grid_Nfc_Upload).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // cmd_upload_DB
             // 
-            cmd_upload_DB.Location = new Point(383, 211);
+            cmd_upload_DB.Location = new Point(383, 154);
             cmd_upload_DB.Name = "cmd_upload_DB";
-            cmd_upload_DB.Size = new Size(82, 36);
+            cmd_upload_DB.Size = new Size(90, 36);
             cmd_upload_DB.TabIndex = 0;
             cmd_upload_DB.Text = "Upload DB";
             cmd_upload_DB.UseVisualStyleBackColor = true;
@@ -128,7 +129,7 @@
             // 
             // cmd_Delete
             // 
-            cmd_Delete.Location = new Point(383, 128);
+            cmd_Delete.Location = new Point(383, 96);
             cmd_Delete.Name = "cmd_Delete";
             cmd_Delete.Size = new Size(90, 36);
             cmd_Delete.TabIndex = 5;
@@ -146,11 +147,22 @@
             cmd_Delete_All.UseVisualStyleBackColor = true;
             cmd_Delete_All.Click += cmd_Delete_All_Click;
             // 
+            // btn_back
+            // 
+            btn_back.Location = new Point(383, 212);
+            btn_back.Name = "btn_back";
+            btn_back.Size = new Size(90, 35);
+            btn_back.TabIndex = 7;
+            btn_back.Text = "Back";
+            btn_back.UseVisualStyleBackColor = true;
+            btn_back.Click += btn_back_Click;
+            // 
             // Upload
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btn_back);
             Controls.Add(cmd_Delete_All);
             Controls.Add(cmd_Delete);
             Controls.Add(Delete_DB);
@@ -182,5 +194,6 @@
         private Button Delete_DB;
         private Button cmd_Delete;
         private Button cmd_Delete_All;
+        private Button btn_back;
     }
 }

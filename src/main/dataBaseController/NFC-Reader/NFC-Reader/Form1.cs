@@ -115,7 +115,7 @@ namespace NFC_Reader
             }
         }
 
-            private void creatorToolStripMenuItem_Click(object sender, EventArgs e)
+        private void creatorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Creator:\nJonas Sakotnik\nGregor Christiner\nFlorian Neubauer");
         }
@@ -142,6 +142,11 @@ namespace NFC_Reader
                {
                    MessageBox.Show("Can not open Connection");
                }*/
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

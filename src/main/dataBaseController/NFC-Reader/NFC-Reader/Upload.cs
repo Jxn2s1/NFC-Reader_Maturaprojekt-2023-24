@@ -156,6 +156,12 @@ namespace NFC_Reader
         {
             Grid_Nfc_Upload.Rows.Clear();
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            form1.Show();
+            Close();
+        }
     }
 }
 
