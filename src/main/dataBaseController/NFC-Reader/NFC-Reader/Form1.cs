@@ -1,3 +1,4 @@
+
 using Microsoft.VisualBasic;
 using System.Diagnostics;
 
@@ -8,6 +9,7 @@ namespace NFC_Reader
     {
         private const string ConnectionString = "Server=localhost;Database=nfc-reader_Maturaprojekt;Uid=root;Pwd=\"\";"; // Hier deine Verbindungszeichenfolge einfügen
         private Database database;
+        private JsonInput jsonInput;
 
 
         int id_grid;
@@ -18,12 +20,50 @@ namespace NFC_Reader
         {
             InitializeComponent();
             database = new Database(ConnectionString);
+            jsonInput = new JsonInput();
             InitializeDataGridView();
+            LoadJsonData();
+
         }
         private void InitializeDataGridView()
         {
             grid_Nfc.Columns.Add("Column1", "Id");
             grid_Nfc.Columns.Add("Column2", "Daten");
+        }
+        private void LoadJsonData()
+        {
+            string projectRoot = AppDomain.CurrentDomain.BaseDirectory;
+            string filePath = Path.Combine(projectRoot, "Output.json");
+
+            if (File.Exists(filePath))
+            {
+                try
+                {
+                    JsonInput.JsonData jsonData = jsonInput.ReadJsonData(filePath);
+
+                    grid_Nfc.Rows.Clear();
+
+                    if (jsonData != null && jsonData.DataSets != null)
+                    {
+                        foreach (var dataSet in jsonData.DataSets)
+                        {
+                            grid_Nfc.Rows.Add(dataSet.Value.numberOfData, dataSet.Value.outputString);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error reading or deserializing JSON data.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error reading JSON file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("JSON file not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
