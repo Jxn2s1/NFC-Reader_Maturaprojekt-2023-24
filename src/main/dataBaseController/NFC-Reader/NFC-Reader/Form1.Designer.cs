@@ -92,9 +92,9 @@
             // 
             // cmd_Website
             // 
-            cmd_Website.Location = new Point(713, 386);
+            cmd_Website.Location = new Point(273, 53);
             cmd_Website.Name = "cmd_Website";
-            cmd_Website.Size = new Size(75, 23);
+            cmd_Website.Size = new Size(75, 35);
             cmd_Website.TabIndex = 2;
             cmd_Website.Text = "Website";
             cmd_Website.UseVisualStyleBackColor = true;
@@ -142,7 +142,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(421, 81);
+            button2.Location = new Point(688, 394);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 8;

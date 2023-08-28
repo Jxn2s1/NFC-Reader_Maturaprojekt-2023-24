@@ -19,8 +19,8 @@ namespace NFC_Reader
         int id;
         string data;
         string chipData;
-        
-        
+
+
         public Form1()
         {
             InitializeComponent();
@@ -104,8 +104,15 @@ namespace NFC_Reader
 
         private void cmd_Website_Click(object sender, EventArgs e)
         {
-            const String url = "https://maturaprojekt-nfc-reader.github.io/";
-            openWebsite(url);
+            using (HttpClient client = new HttpClient())
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo
+                {
+                    FileName = "https://maturaprojekt-nfc-reader.github.io/", //Open Website
+                    UseShellExecute = true
+                };
+                Process.Start(startInfo);
+            }
         }
 
         public void openWebsite(string url)
@@ -120,7 +127,7 @@ namespace NFC_Reader
             }
         }
 
-        
+
 
         private void creatorToolStripMenuItem_Click(object sender, EventArgs e)
         {
