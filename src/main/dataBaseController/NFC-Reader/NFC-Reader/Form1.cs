@@ -3,6 +3,8 @@ using Microsoft.VisualBasic;
 using System.Diagnostics;
 
 
+
+
 namespace NFC_Reader
 {
     public partial class Form1 : Form
@@ -12,10 +14,13 @@ namespace NFC_Reader
         private JsonInput jsonInput;
 
 
+
         int id_grid;
         int id;
         string data;
         string chipData;
+        
+        
         public Form1()
         {
             InitializeComponent();
@@ -99,11 +104,23 @@ namespace NFC_Reader
 
         private void cmd_Website_Click(object sender, EventArgs e)
         {
-            Process P = new Process();
-            P.StartInfo.FileName = "notepad.exe";
+            /* Process P = new Process();
+             P.StartInfo.FileName = "";
 
-            P.Start();
+             P.Start();
+             */
+            string url = "https://maturaprojekt-nfc-reader.github.io/";
+            try
+            { 
+                Process.Start(url);
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show("Fehler beim Öffnen der Website!" + ex.Message + MessageBoxIcon.Error + MessageBoxButtons.OK);
+            }
         }
+
+        
 
         private void creatorToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -118,20 +135,20 @@ namespace NFC_Reader
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            /* string connectionString = null;
-               MySqlConnection conn;
-               connectionString = "Server=localhost;Database=nfc-reader_Maturaprojekt;Uid=root;Pwd=\"\";";
-               conn = new MySqlConnection(connectionString);
-               try
-               {
-                   conn.Open();
-                   MessageBox.Show("Connection Open!");
-                   conn.Close();
-               }
-               catch (Exception ex)
-               {
-                   MessageBox.Show("Can not open Connection");
-               }*/
+            /*string connectionString = null;
+            MySqlConnection conn;
+            connectionString = "Server=localhost;Database=nfc-reader_Maturaprojekt;Uid=root;Pwd=\"\";";
+            conn = new MySqlConnection(connectionString);
+            try
+            {
+                conn.Open();
+                MessageBox.Show("Connection Open!");
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Can not open Connection");
+            }*/
         }
     }
 }
