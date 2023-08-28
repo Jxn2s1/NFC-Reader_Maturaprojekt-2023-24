@@ -32,7 +32,7 @@ public class Main {
         }
         scanner.close();
 
-        //Automatically opens the GitHub Pages site and shows the Web Interface
+        //Automatically opens the GitHub Pages site and shows the Web Interface (Temporary until Database is up and running)
         OpenWebInterface.open();
 
     }

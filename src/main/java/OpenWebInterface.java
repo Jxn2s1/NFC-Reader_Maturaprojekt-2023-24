@@ -21,7 +21,7 @@ public class OpenWebInterface {
     //Contains the Link of the Website
     public static void open() {
             //String link = "https://maturaprojekt-nfc-reader.github.io/";
-            String link = "http://localhost:63342/MP_NFC-READER_2023-24/src/main/resources/index.html?_ijt=u7b0kqh2a60d74ppja13nq84l6&_ij_reload=RELOAD_ON_SAVE";
+            String link = "http://localhost:63342/MP_NFC-READER_2023-24/index.html?_ijt=u7b0kqh2a60d74ppja13nq84l6&_ij_reload=RELOAD_ON_SAVE";
             openWebPage(link);
         System.exit(0);
 
