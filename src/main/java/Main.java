@@ -32,6 +32,8 @@ public class Main {
         }
         scanner.close();
 
+        DataBaseController.openController();
+
         //Automatically opens the GitHub Pages site and shows the Web Interface
         OpenWebInterface.open();
 

@@ -1,0 +1,108 @@
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.exe
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.deps.json
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.runtimeconfig.json
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.pdb
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC_Reader.Form1.resources
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.GenerateResource.cache
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.GeneratedMSBuildEditorConfig.editorconfig
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.AssemblyInfoInputs.cache
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.AssemblyInfo.cs
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.CoreCompileInputs.cache
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\refint\NFC-Reader.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.pdb
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.genruntimeconfig.cache
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\ref\NFC-Reader.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\Google.Protobuf.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\MySql.Data.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.Text.Json.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\ZstdSharp.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.AssemblyReference.cache
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.CopyComplete
+D:\Selbst erstellte Programme\Schule\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC_Reader.Upload.resources
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.exe
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.deps.json
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.runtimeconfig.json
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.pdb
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\ZstdSharp.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.AssemblyReference.cache
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC_Reader.Form1.resources
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC_Reader.Upload.resources
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.GenerateResource.cache
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.AssemblyInfoInputs.cache
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.AssemblyInfo.cs
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.CoreCompileInputs.cache
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.CopyComplete
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\refint\NFC-Reader.dll
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.pdb
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.genruntimeconfig.cache
+C:\Users\jonas\Windows-Docs\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\ref\NFC-Reader.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.exe
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.deps.json
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.runtimeconfig.json
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\NFC-Reader.pdb
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\ZstdSharp.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.AssemblyReference.cache
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC_Reader.Form1.resources
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC_Reader.Upload.resources
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.GenerateResource.cache
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.AssemblyInfoInputs.cache
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.AssemblyInfo.cs
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.CoreCompileInputs.cache
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.csproj.CopyComplete
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\refint\NFC-Reader.dll
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.pdb
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\NFC-Reader.genruntimeconfig.cache
+C:\Projects\Maturaprojekt\NFC-Reader\NFC-Reader\obj\Debug\net6.0-windows\ref\NFC-Reader.dll
