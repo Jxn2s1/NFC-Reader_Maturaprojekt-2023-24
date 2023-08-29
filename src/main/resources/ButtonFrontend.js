@@ -1,3 +1,5 @@
+import data from "./app.cjs/data";
+var stadi = data;
 //Number what Data which is displayed on the website | needed for the buttons in ChangeDiv* functions
 var displayNum = 0;
 
@@ -41,10 +43,14 @@ class AllLastStrings{
 //creation of array needed for creating the website | needed in the fetch() function below
 var allLastStrings = new AllLastStrings();
 
+    dataGet();
+
 //reading out the data from the JSON file - will be replaced with database-reader in future
-fetch('Output.json')
+fetch('src/main/dataBaseController/NFC-Reader/NFC-Reader/bin/Debug/net6.0-windows/Output.json')
             .then(response => response.json())
             .then(data => {
+
+
 
                 var arrayString = JSON.stringify(data);
                 var CleanString = CleanJSON(arrayString);

@@ -14,4 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NFC_Reader
-build_property.ProjectDir = D:\Selbst erstellte Programme\Schule\Maturaprojekt_2023_24\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\
+build_property.ProjectDir = c:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\
