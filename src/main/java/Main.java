@@ -20,7 +20,7 @@ public class Main {
             System.out.println(inputData);
 
             //Exits if the exit chip is scanned
-            if (inputData.equals("9abc3c04s"))
+            if (inputData.equals("9abc3c04"))
             {
                 exit = true;
             }
