@@ -1,38 +1,14 @@
 {
-  "Data 1" : {
-    "outputString" : "5fcf77c6",
-    "numberOfData" : 1
-  },
-  "Data 2" : {
-    "outputString" : "9aa4fd04",
-    "numberOfData" : 2
-  },
-  "Data 3" : {
-    "outputString" : "69b0ca4a",
-    "numberOfData" : 3
-  },
-  "Data 4" : {
-    "outputString" : "9abfd504",
-    "numberOfData" : 4
-  },
-  "Data 5" : {
-    "outputString" : "6907035a",
-    "numberOfData" : 5
-  },
-  "Data 6" : {
-    "outputString" : "6935f03a",
-    "numberOfData" : 6
-  },
-  "Data 7" : {
-    "outputString" : "69f4005a",
-    "numberOfData" : 7
-  },
-  "Data 8" : {
-    "outputString" : "69f4005a",
-    "numberOfData" : 8
-  },
-  "Data 9" : {
-    "outputString" : "69f4005a",
-    "numberOfData" : 9
-  }
-}
+    "Data 1" : {
+      "outputString" : "asdf",
+      "numberOfData" : 1
+    },
+    "Data 2" : {
+      "outputString" : "asdf",
+      "numberOfData" : 2
+    },
+    "Data 3" : {
+      "outputString" : "asdf",
+      "numberOfData" : 3
+    }
+  } 

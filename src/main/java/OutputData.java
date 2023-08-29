@@ -1,7 +1,6 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -27,7 +26,8 @@ public class OutputData {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
 
-        File outputFile = new File("src/main/resources/Output.json");
+        File outputFile = new File("src/main/dataBaseController/NFC-Reader/NFC-Reader/bin/Debug/net6.0-windows/Output.json");
+        //File outputFile = new File("src/main/resources/Output.json");
 
         try {
             ObjectNode jsonNode;
@@ -43,7 +43,6 @@ public class OutputData {
             newDataNode.put("numberOfData", numberOfData);
 
             jsonNode.set(String.valueOf("Data " + numberOfData), newDataNode);
-
             objectMapper.writeValue(outputFile, jsonNode);
             System.out.println("Data " + numberOfData + " appended to Output.json successfully.\n");
         } catch (IOException e) {
@@ -53,7 +52,8 @@ public class OutputData {
 
     //Clears the Output.json (is only used once before everything else
     public void clearJsonFile() {
-        File outputFile = new File("src/main/resources/Output.json");
+        File outputFile = new File("src/main/dataBaseController/NFC-Reader/NFC-Reader/bin/Debug/net6.0-windows/Output.json");
+        //File outputFile = new File("src/main/resources/Output.json");
 
         try (FileWriter writer = new FileWriter(outputFile)) {
             writer.write("{}"); // Write an empty string to clear the file

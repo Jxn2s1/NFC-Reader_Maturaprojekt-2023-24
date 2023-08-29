@@ -20,7 +20,7 @@ public class Main {
             System.out.println(inputData);
 
             //Exits if the exit chip is scanned
-            if (inputData.equals("9abc3c04"))
+            if (inputData.equals("9abc3c04s"))
             {
                 exit = true;
             }
@@ -32,7 +32,9 @@ public class Main {
         }
         scanner.close();
 
-        //Automatically opens the GitHub Pages site and shows the Web Interface (Temporary until Database is up and running)
+        DataBaseController.openController();
+
+        //Automatically opens the GitHub Pages site and shows the Web Interface
         OpenWebInterface.open();
 
     }
