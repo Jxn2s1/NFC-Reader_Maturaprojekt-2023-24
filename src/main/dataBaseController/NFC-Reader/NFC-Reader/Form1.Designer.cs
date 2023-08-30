@@ -42,8 +42,11 @@
             button2 = new Button();
             grid_Nfc = new DataGridView();
             btn_exit = new Button();
+            lbl_heading_1 = new Label();
+            pB_Riselogo_1 = new PictureBox();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grid_Nfc).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pB_Riselogo_1).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -92,9 +95,9 @@
             // 
             // cmd_Website
             // 
-            cmd_Website.Location = new Point(273, 53);
+            cmd_Website.Location = new Point(370, 70);
             cmd_Website.Name = "cmd_Website";
-            cmd_Website.Size = new Size(75, 35);
+            cmd_Website.Size = new Size(75, 40);
             cmd_Website.TabIndex = 2;
             cmd_Website.Text = "Website";
             cmd_Website.UseVisualStyleBackColor = true;
@@ -102,9 +105,9 @@
             // 
             // cmd_delete
             // 
-            cmd_delete.Location = new Point(273, 148);
+            cmd_delete.Location = new Point(370, 174);
             cmd_delete.Name = "cmd_delete";
-            cmd_delete.Size = new Size(75, 38);
+            cmd_delete.Size = new Size(75, 40);
             cmd_delete.TabIndex = 4;
             cmd_delete.Text = "Löschen";
             cmd_delete.UseVisualStyleBackColor = true;
@@ -112,9 +115,9 @@
             // 
             // cmd_delete_all
             // 
-            cmd_delete_all.Location = new Point(273, 99);
+            cmd_delete_all.Location = new Point(370, 122);
             cmd_delete_all.Name = "cmd_delete_all";
-            cmd_delete_all.Size = new Size(75, 38);
+            cmd_delete_all.Size = new Size(75, 40);
             cmd_delete_all.TabIndex = 5;
             cmd_delete_all.Text = "Alle Löschen";
             cmd_delete_all.UseVisualStyleBackColor = true;
@@ -122,7 +125,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(688, 355);
+            button1.Location = new Point(713, 386);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 6;
@@ -132,9 +135,9 @@
             // 
             // cmd_Upload_Database
             // 
-            cmd_Upload_Database.Location = new Point(273, 195);
+            cmd_Upload_Database.Location = new Point(370, 225);
             cmd_Upload_Database.Name = "cmd_Upload_Database";
-            cmd_Upload_Database.Size = new Size(75, 38);
+            cmd_Upload_Database.Size = new Size(75, 40);
             cmd_Upload_Database.TabIndex = 7;
             cmd_Upload_Database.Text = "Upload";
             cmd_Upload_Database.UseVisualStyleBackColor = true;
@@ -142,7 +145,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(688, 394);
+            button2.Location = new Point(713, 415);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 8;
@@ -153,27 +156,49 @@
             // grid_Nfc
             // 
             grid_Nfc.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            grid_Nfc.Location = new Point(28, 53);
+            grid_Nfc.Location = new Point(30, 70);
             grid_Nfc.Name = "grid_Nfc";
             grid_Nfc.RowTemplate.Height = 25;
-            grid_Nfc.Size = new Size(239, 233);
+            grid_Nfc.Size = new Size(335, 250);
             grid_Nfc.TabIndex = 9;
             // 
             // btn_exit
             // 
-            btn_exit.Location = new Point(273, 248);
+            btn_exit.Location = new Point(370, 280);
             btn_exit.Name = "btn_exit";
-            btn_exit.Size = new Size(75, 38);
+            btn_exit.Size = new Size(75, 40);
             btn_exit.TabIndex = 10;
             btn_exit.Text = "Close";
             btn_exit.UseVisualStyleBackColor = true;
             btn_exit.Click += btn_exit_Click;
+            // 
+            // lbl_heading_1
+            // 
+            lbl_heading_1.AutoSize = true;
+            lbl_heading_1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_heading_1.Location = new Point(30, 24);
+            lbl_heading_1.Name = "lbl_heading_1";
+            lbl_heading_1.Size = new Size(154, 37);
+            lbl_heading_1.TabIndex = 11;
+            lbl_heading_1.Text = "Lokal Data";
+            // 
+            // pB_Riselogo_1
+            // 
+            pB_Riselogo_1.Image = Properties.Resources.rise_logo;
+            pB_Riselogo_1.Location = new Point(30, 350);
+            pB_Riselogo_1.Name = "pB_Riselogo_1";
+            pB_Riselogo_1.Size = new Size(200, 90);
+            pB_Riselogo_1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pB_Riselogo_1.TabIndex = 12;
+            pB_Riselogo_1.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pB_Riselogo_1);
+            Controls.Add(lbl_heading_1);
             Controls.Add(btn_exit);
             Controls.Add(grid_Nfc);
             Controls.Add(button2);
@@ -189,6 +214,7 @@
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)grid_Nfc).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pB_Riselogo_1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -209,5 +235,7 @@
         private DataGridView grid_Nfc;
         private Button btn_exit;
         private Button button3;
+        private Label lbl_heading_1;
+        private PictureBox pB_Riselogo_1;
     }
 }

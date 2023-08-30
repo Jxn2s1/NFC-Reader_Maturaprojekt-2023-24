@@ -41,15 +41,18 @@
             cmd_Delete = new Button();
             cmd_Delete_All = new Button();
             btn_back = new Button();
+            pictureBox1 = new PictureBox();
+            lbl_heading_2 = new Label();
             ((System.ComponentModel.ISupportInitialize)Grid_Nfc_Upload).BeginInit();
             menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // cmd_upload_DB
             // 
-            cmd_upload_DB.Location = new Point(383, 152);
+            cmd_upload_DB.Location = new Point(370, 205);
             cmd_upload_DB.Name = "cmd_upload_DB";
-            cmd_upload_DB.Size = new Size(90, 36);
+            cmd_upload_DB.Size = new Size(75, 40);
             cmd_upload_DB.TabIndex = 0;
             cmd_upload_DB.Text = "Upload DB";
             cmd_upload_DB.UseVisualStyleBackColor = true;
@@ -58,10 +61,10 @@
             // Grid_Nfc_Upload
             // 
             Grid_Nfc_Upload.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Grid_Nfc_Upload.Location = new Point(30, 41);
+            Grid_Nfc_Upload.Location = new Point(30, 70);
             Grid_Nfc_Upload.Name = "Grid_Nfc_Upload";
             Grid_Nfc_Upload.RowTemplate.Height = 25;
-            Grid_Nfc_Upload.Size = new Size(334, 206);
+            Grid_Nfc_Upload.Size = new Size(335, 250);
             Grid_Nfc_Upload.TabIndex = 1;
             // 
             // cmd_download_DB
@@ -129,9 +132,9 @@
             // 
             // cmd_Delete
             // 
-            cmd_Delete.Location = new Point(383, 96);
+            cmd_Delete.Location = new Point(370, 136);
             cmd_Delete.Name = "cmd_Delete";
-            cmd_Delete.Size = new Size(90, 36);
+            cmd_Delete.Size = new Size(75, 40);
             cmd_Delete.TabIndex = 5;
             cmd_Delete.Text = "Löschen";
             cmd_Delete.UseVisualStyleBackColor = true;
@@ -139,9 +142,9 @@
             // 
             // cmd_Delete_All
             // 
-            cmd_Delete_All.Location = new Point(383, 41);
+            cmd_Delete_All.Location = new Point(370, 70);
             cmd_Delete_All.Name = "cmd_Delete_All";
-            cmd_Delete_All.Size = new Size(90, 36);
+            cmd_Delete_All.Size = new Size(75, 40);
             cmd_Delete_All.TabIndex = 6;
             cmd_Delete_All.Text = "Alle Löschen";
             cmd_Delete_All.UseVisualStyleBackColor = true;
@@ -149,19 +152,41 @@
             // 
             // btn_back
             // 
-            btn_back.Location = new Point(383, 212);
+            btn_back.Location = new Point(370, 275);
             btn_back.Name = "btn_back";
-            btn_back.Size = new Size(90, 35);
+            btn_back.Size = new Size(75, 40);
             btn_back.TabIndex = 7;
             btn_back.Text = "Back";
             btn_back.UseVisualStyleBackColor = true;
             btn_back.Click += btn_back_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.rise_logo;
+            pictureBox1.Location = new Point(30, 348);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(200, 90);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 14;
+            pictureBox1.TabStop = false;
+            // 
+            // lbl_heading_2
+            // 
+            lbl_heading_2.AutoSize = true;
+            lbl_heading_2.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_heading_2.Location = new Point(30, 24);
+            lbl_heading_2.Name = "lbl_heading_2";
+            lbl_heading_2.Size = new Size(168, 37);
+            lbl_heading_2.TabIndex = 13;
+            lbl_heading_2.Text = "Online Data";
             // 
             // Upload
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
+            Controls.Add(lbl_heading_2);
             Controls.Add(btn_back);
             Controls.Add(cmd_Delete_All);
             Controls.Add(cmd_Delete);
@@ -176,6 +201,7 @@
             ((System.ComponentModel.ISupportInitialize)Grid_Nfc_Upload).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -195,5 +221,7 @@
         private Button cmd_Delete;
         private Button cmd_Delete_All;
         private Button btn_back;
+        private PictureBox pictureBox1;
+        private Label lbl_heading_2;
     }
 }
