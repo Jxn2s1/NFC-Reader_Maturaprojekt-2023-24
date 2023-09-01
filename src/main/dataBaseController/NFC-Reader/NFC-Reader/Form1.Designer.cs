@@ -184,7 +184,7 @@
             // 
             // pB_Riselogo_1
             // 
-            pB_Riselogo_1.Image = Properties.Resources.rise_logo;
+            //pB_Riselogo_1.Image = Properties.Resources.rise_logo;
             pB_Riselogo_1.Location = new Point(30, 350);
             pB_Riselogo_1.Name = "pB_Riselogo_1";
             pB_Riselogo_1.Size = new Size(200, 90);
