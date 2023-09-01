@@ -41,8 +41,8 @@
             cmd_Delete = new Button();
             cmd_Delete_All = new Button();
             btn_back = new Button();
+            lbl_Heading_upload = new Label();
             pictureBox1 = new PictureBox();
-            lbl_heading_2 = new Label();
             ((System.ComponentModel.ISupportInitialize)Grid_Nfc_Upload).BeginInit();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -50,7 +50,7 @@
             // 
             // cmd_upload_DB
             // 
-            cmd_upload_DB.Location = new Point(370, 205);
+            cmd_upload_DB.Location = new Point(380, 212);
             cmd_upload_DB.Name = "cmd_upload_DB";
             cmd_upload_DB.Size = new Size(75, 40);
             cmd_upload_DB.TabIndex = 0;
@@ -61,15 +61,15 @@
             // Grid_Nfc_Upload
             // 
             Grid_Nfc_Upload.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Grid_Nfc_Upload.Location = new Point(30, 70);
+            Grid_Nfc_Upload.Location = new Point(25, 75);
             Grid_Nfc_Upload.Name = "Grid_Nfc_Upload";
             Grid_Nfc_Upload.RowTemplate.Height = 25;
-            Grid_Nfc_Upload.Size = new Size(335, 250);
+            Grid_Nfc_Upload.Size = new Size(350, 250);
             Grid_Nfc_Upload.TabIndex = 1;
             // 
             // cmd_download_DB
             // 
-            cmd_download_DB.Location = new Point(698, 360);
+            cmd_download_DB.Location = new Point(698, 402);
             cmd_download_DB.Name = "cmd_download_DB";
             cmd_download_DB.Size = new Size(90, 36);
             cmd_download_DB.TabIndex = 2;
@@ -82,7 +82,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { dateiToolStripMenuItem, helpToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(804, 24);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -122,7 +122,7 @@
             // 
             // Delete_DB
             // 
-            Delete_DB.Location = new Point(698, 402);
+            Delete_DB.Location = new Point(698, 360);
             Delete_DB.Name = "Delete_DB";
             Delete_DB.Size = new Size(90, 36);
             Delete_DB.TabIndex = 4;
@@ -132,7 +132,7 @@
             // 
             // cmd_Delete
             // 
-            cmd_Delete.Location = new Point(370, 136);
+            cmd_Delete.Location = new Point(380, 141);
             cmd_Delete.Name = "cmd_Delete";
             cmd_Delete.Size = new Size(75, 40);
             cmd_Delete.TabIndex = 5;
@@ -142,7 +142,7 @@
             // 
             // cmd_Delete_All
             // 
-            cmd_Delete_All.Location = new Point(370, 70);
+            cmd_Delete_All.Location = new Point(380, 75);
             cmd_Delete_All.Name = "cmd_Delete_All";
             cmd_Delete_All.Size = new Size(75, 40);
             cmd_Delete_All.TabIndex = 6;
@@ -152,7 +152,7 @@
             // 
             // btn_back
             // 
-            btn_back.Location = new Point(370, 275);
+            btn_back.Location = new Point(380, 285);
             btn_back.Name = "btn_back";
             btn_back.Size = new Size(75, 40);
             btn_back.TabIndex = 7;
@@ -160,33 +160,33 @@
             btn_back.UseVisualStyleBackColor = true;
             btn_back.Click += btn_back_Click;
             // 
+            // lbl_Heading_upload
+            // 
+            lbl_Heading_upload.AutoSize = true;
+            lbl_Heading_upload.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_Heading_upload.Location = new Point(25, 35);
+            lbl_Heading_upload.Name = "lbl_Heading_upload";
+            lbl_Heading_upload.Size = new Size(168, 37);
+            lbl_Heading_upload.TabIndex = 8;
+            lbl_Heading_upload.Text = "Online Data";
+            // 
             // pictureBox1
             // 
-            //pictureBox1.Image = Properties.Resources.rise_logo;
-            pictureBox1.Location = new Point(30, 348);
+            pictureBox1.Image = Properties.Resources.rise_logo;
+            pictureBox1.Location = new Point(25, 331);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(200, 90);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 14;
+            pictureBox1.Size = new Size(200, 100);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
-            // 
-            // lbl_heading_2
-            // 
-            lbl_heading_2.AutoSize = true;
-            lbl_heading_2.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbl_heading_2.Location = new Point(30, 24);
-            lbl_heading_2.Name = "lbl_heading_2";
-            lbl_heading_2.Size = new Size(168, 37);
-            lbl_heading_2.TabIndex = 13;
-            lbl_heading_2.Text = "Online Data";
             // 
             // Upload
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(804, 461);
             Controls.Add(pictureBox1);
-            Controls.Add(lbl_heading_2);
+            Controls.Add(lbl_Heading_upload);
             Controls.Add(btn_back);
             Controls.Add(cmd_Delete_All);
             Controls.Add(cmd_Delete);
@@ -221,7 +221,7 @@
         private Button cmd_Delete;
         private Button cmd_Delete_All;
         private Button btn_back;
+        private Label lbl_Heading_upload;
         private PictureBox pictureBox1;
-        private Label lbl_heading_2;
     }
 }

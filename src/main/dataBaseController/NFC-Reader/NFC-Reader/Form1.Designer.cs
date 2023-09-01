@@ -42,11 +42,11 @@
             button2 = new Button();
             grid_Nfc = new DataGridView();
             btn_exit = new Button();
-            lbl_heading_1 = new Label();
-            pB_Riselogo_1 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            lbl_Heading_upload = new Label();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grid_Nfc).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pB_Riselogo_1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -54,7 +54,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { dateiToolStripMenuItem, helpToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(804, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -95,7 +95,7 @@
             // 
             // cmd_Website
             // 
-            cmd_Website.Location = new Point(370, 70);
+            cmd_Website.Location = new Point(380, 75);
             cmd_Website.Name = "cmd_Website";
             cmd_Website.Size = new Size(75, 40);
             cmd_Website.TabIndex = 2;
@@ -105,7 +105,7 @@
             // 
             // cmd_delete
             // 
-            cmd_delete.Location = new Point(370, 174);
+            cmd_delete.Location = new Point(380, 180);
             cmd_delete.Name = "cmd_delete";
             cmd_delete.Size = new Size(75, 40);
             cmd_delete.TabIndex = 4;
@@ -115,7 +115,7 @@
             // 
             // cmd_delete_all
             // 
-            cmd_delete_all.Location = new Point(370, 122);
+            cmd_delete_all.Location = new Point(380, 124);
             cmd_delete_all.Name = "cmd_delete_all";
             cmd_delete_all.Size = new Size(75, 40);
             cmd_delete_all.TabIndex = 5;
@@ -135,7 +135,7 @@
             // 
             // cmd_Upload_Database
             // 
-            cmd_Upload_Database.Location = new Point(370, 225);
+            cmd_Upload_Database.Location = new Point(380, 234);
             cmd_Upload_Database.Name = "cmd_Upload_Database";
             cmd_Upload_Database.Size = new Size(75, 40);
             cmd_Upload_Database.TabIndex = 7;
@@ -156,15 +156,15 @@
             // grid_Nfc
             // 
             grid_Nfc.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            grid_Nfc.Location = new Point(30, 70);
+            grid_Nfc.Location = new Point(25, 75);
             grid_Nfc.Name = "grid_Nfc";
             grid_Nfc.RowTemplate.Height = 25;
-            grid_Nfc.Size = new Size(335, 250);
+            grid_Nfc.Size = new Size(350, 250);
             grid_Nfc.TabIndex = 9;
             // 
             // btn_exit
             // 
-            btn_exit.Location = new Point(370, 280);
+            btn_exit.Location = new Point(380, 285);
             btn_exit.Name = "btn_exit";
             btn_exit.Size = new Size(75, 40);
             btn_exit.TabIndex = 10;
@@ -172,33 +172,33 @@
             btn_exit.UseVisualStyleBackColor = true;
             btn_exit.Click += btn_exit_Click;
             // 
-            // lbl_heading_1
+            // pictureBox1
             // 
-            lbl_heading_1.AutoSize = true;
-            lbl_heading_1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbl_heading_1.Location = new Point(30, 24);
-            lbl_heading_1.Name = "lbl_heading_1";
-            lbl_heading_1.Size = new Size(154, 37);
-            lbl_heading_1.TabIndex = 11;
-            lbl_heading_1.Text = "Lokal Data";
+            pictureBox1.Image = Properties.Resources.rise_logo;
+            pictureBox1.Location = new Point(25, 331);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(200, 100);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
             // 
-            // pB_Riselogo_1
+            // lbl_Heading_upload
             // 
-            //pB_Riselogo_1.Image = Properties.Resources.rise_logo;
-            pB_Riselogo_1.Location = new Point(30, 350);
-            pB_Riselogo_1.Name = "pB_Riselogo_1";
-            pB_Riselogo_1.Size = new Size(200, 90);
-            pB_Riselogo_1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pB_Riselogo_1.TabIndex = 12;
-            pB_Riselogo_1.TabStop = false;
+            lbl_Heading_upload.AutoSize = true;
+            lbl_Heading_upload.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_Heading_upload.Location = new Point(25, 35);
+            lbl_Heading_upload.Name = "lbl_Heading_upload";
+            lbl_Heading_upload.Size = new Size(168, 37);
+            lbl_Heading_upload.TabIndex = 11;
+            lbl_Heading_upload.Text = "Online Data";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(pB_Riselogo_1);
-            Controls.Add(lbl_heading_1);
+            ClientSize = new Size(804, 461);
+            Controls.Add(pictureBox1);
+            Controls.Add(lbl_Heading_upload);
             Controls.Add(btn_exit);
             Controls.Add(grid_Nfc);
             Controls.Add(button2);
@@ -214,7 +214,7 @@
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)grid_Nfc).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pB_Riselogo_1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -234,8 +234,7 @@
         private Button button2;
         private DataGridView grid_Nfc;
         private Button btn_exit;
-        private Button button3;
-        private Label lbl_heading_1;
-        private PictureBox pB_Riselogo_1;
+        private PictureBox pictureBox1;
+        private Label lbl_Heading_upload;
     }
 }
