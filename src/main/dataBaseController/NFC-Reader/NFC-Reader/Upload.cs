@@ -37,7 +37,7 @@ namespace NFC_Reader
             DataTable dataTable = database.GetNFCChips();
             foreach (DataRow row in dataTable.Rows)
             {
-                Grid_Nfc_Upload.Rows.Add(row["Id"], row["ChipData"]);
+                Grid_Nfc_Upload.Rows.Add(row["Number"], row["ChipData"]);
             }
         }
         private void LoadDataFromGrid()
@@ -75,29 +75,9 @@ namespace NFC_Reader
         private void cmd_upload_DB_Click(object sender, EventArgs e)
         {
             database.DeleteAllNFCChip();
+            database.InsertNFCChip(Grid_Nfc_Upload);
 
-            int i = 1; //Move this outside the loop to avoid resetting it in each iteration
-
-            foreach (DataGridViewRow row in Grid_Nfc_Upload.Rows)
-            {
-                if (!row.IsNewRow) //Skip the new row placeholder
-                {
-                    DataGridViewCell cell = row.Cells[1]; //Get the cell
-
-                    if (cell.Value != null) //Check if the value is not null
-                    {
-                        id = Convert.ToInt32(row.Cells[0].Value);
-                        chipData = cell.Value.ToString();
-
-                        //BItte anschaun
-                        DataTable dataTable = new DataTable();
-                        database.InsertNFCChip(dataTable);
-                        i++;
-                    }
-                }
-            }
-
-            MessageBox.Show("Daten wurden erfolgreich in die Datenbank eingefügt.");
+            MessageBox.Show("Data inserted into the database successfully.");
         }
 
         private void cmd_download_DB_Click(object sender, EventArgs e)
