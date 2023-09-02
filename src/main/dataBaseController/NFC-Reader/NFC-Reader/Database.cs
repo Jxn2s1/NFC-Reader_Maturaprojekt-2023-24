@@ -65,7 +65,6 @@ namespace NFC_Reader
             database.DropCollection("nfc-collection");
             database = client.GetDatabase("nfc-reader");
             collection = database.GetCollection<BsonDocument>("nfc-collection");
-            Console.WriteLine("The Database is now empty!\n");
         }
     }
 }

@@ -79,13 +79,6 @@ namespace NFC_Reader
             Application.Restart();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            id_grid = Convert.ToInt32(Interaction.InputBox("Gib die Id ein!"));
-            data = Interaction.InputBox("Gib die Daten eín!");
-            grid_Nfc.Rows.Add(id_grid, data);
-        }
-
         private void cmd_delete_all_Click(object sender, EventArgs e)
         {
             grid_Nfc.Rows.Clear();
@@ -106,7 +99,7 @@ namespace NFC_Reader
             {
                 ProcessStartInfo startInfo = new ProcessStartInfo
                 {
-                    FileName = "https://maturaprojekt-nfc-reader.github.io/", //Open Website
+                    FileName = "https://maturaprojekt-nfc-reader.github.io/",
                     UseShellExecute = true
                 };
                 Process.Start(startInfo);
@@ -138,37 +131,11 @@ namespace NFC_Reader
             x.Show();
             Hide();
         }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            /*string connectionString = null;
-            MySqlConnection conn;
-            connectionString = "Server=localhost;Database=nfc-reader_Maturaprojekt;Uid=root;Pwd=\"\";";
-            conn = new MySqlConnection(connectionString);
-            try
-            {
-                conn.Open();
-                MessageBox.Show("Connection Open!");
-                conn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Can not open Connection");
-            }*/
-        }
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

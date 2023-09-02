@@ -37,13 +37,12 @@
             cmd_Website = new Button();
             cmd_delete = new Button();
             cmd_delete_all = new Button();
-            button1 = new Button();
             cmd_Upload_Database = new Button();
-            button2 = new Button();
             grid_Nfc = new DataGridView();
             btn_exit = new Button();
             pictureBox1 = new PictureBox();
             lbl_Heading_upload = new Label();
+            dateiToolStripMenuItem1 = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grid_Nfc).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -57,11 +56,10 @@
             menuStrip1.Size = new Size(804, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
-            menuStrip1.ItemClicked += menuStrip1_ItemClicked;
             // 
             // dateiToolStripMenuItem
             // 
-            dateiToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { reloadToolStripMenuItem, exitToolStripMenuItem });
+            dateiToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { reloadToolStripMenuItem, exitToolStripMenuItem, dateiToolStripMenuItem1 });
             dateiToolStripMenuItem.Name = "dateiToolStripMenuItem";
             dateiToolStripMenuItem.Size = new Size(46, 20);
             dateiToolStripMenuItem.Text = "Datei";
@@ -69,14 +67,14 @@
             // reloadToolStripMenuItem
             // 
             reloadToolStripMenuItem.Name = "reloadToolStripMenuItem";
-            reloadToolStripMenuItem.Size = new Size(110, 22);
+            reloadToolStripMenuItem.Size = new Size(180, 22);
             reloadToolStripMenuItem.Text = "Reload";
             reloadToolStripMenuItem.Click += reloadToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(110, 22);
+            exitToolStripMenuItem.Size = new Size(180, 22);
             exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
@@ -90,7 +88,7 @@
             // creatorToolStripMenuItem
             // 
             creatorToolStripMenuItem.Name = "creatorToolStripMenuItem";
-            creatorToolStripMenuItem.Size = new Size(113, 22);
+            creatorToolStripMenuItem.Size = new Size(180, 22);
             creatorToolStripMenuItem.Text = "Creator";
             creatorToolStripMenuItem.Click += creatorToolStripMenuItem_Click;
             // 
@@ -110,7 +108,7 @@
             cmd_delete.Name = "cmd_delete";
             cmd_delete.Size = new Size(75, 40);
             cmd_delete.TabIndex = 4;
-            cmd_delete.Text = "Löschen";
+            cmd_delete.Text = "Delete";
             cmd_delete.UseVisualStyleBackColor = true;
             cmd_delete.Click += cmd_delete_Click;
             // 
@@ -120,19 +118,9 @@
             cmd_delete_all.Name = "cmd_delete_all";
             cmd_delete_all.Size = new Size(75, 40);
             cmd_delete_all.TabIndex = 5;
-            cmd_delete_all.Text = "Alle Löschen";
+            cmd_delete_all.Text = "Delete All";
             cmd_delete_all.UseVisualStyleBackColor = true;
             cmd_delete_all.Click += cmd_delete_all_Click;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(713, 386);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 6;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click_1;
             // 
             // cmd_Upload_Database
             // 
@@ -143,16 +131,6 @@
             cmd_Upload_Database.Text = "Upload";
             cmd_Upload_Database.UseVisualStyleBackColor = true;
             cmd_Upload_Database.Click += cmd_Upload_Database_Click;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(713, 415);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 8;
-            button2.Text = "Datenbank";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
             // 
             // grid_Nfc
             // 
@@ -189,9 +167,15 @@
             lbl_Heading_upload.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_Heading_upload.Location = new Point(25, 35);
             lbl_Heading_upload.Name = "lbl_Heading_upload";
-            lbl_Heading_upload.Size = new Size(168, 37);
+            lbl_Heading_upload.Size = new Size(154, 37);
             lbl_Heading_upload.TabIndex = 11;
-            lbl_Heading_upload.Text = "Online Data";
+            lbl_Heading_upload.Text = "Lokal Data";
+            // 
+            // dateiToolStripMenuItem1
+            // 
+            dateiToolStripMenuItem1.Name = "dateiToolStripMenuItem1";
+            dateiToolStripMenuItem1.Size = new Size(180, 22);
+            dateiToolStripMenuItem1.Text = "Datei";
             // 
             // Form1
             // 
@@ -202,9 +186,7 @@
             Controls.Add(lbl_Heading_upload);
             Controls.Add(btn_exit);
             Controls.Add(grid_Nfc);
-            Controls.Add(button2);
             Controls.Add(cmd_Upload_Database);
-            Controls.Add(button1);
             Controls.Add(cmd_delete_all);
             Controls.Add(cmd_delete);
             Controls.Add(cmd_Website);
@@ -212,7 +194,6 @@
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)grid_Nfc).EndInit();
@@ -231,12 +212,11 @@
         private Button cmd_Website;
         private Button cmd_delete;
         private Button cmd_delete_all;
-        private Button button1;
         private Button cmd_Upload_Database;
-        private Button button2;
         private DataGridView grid_Nfc;
         private Button btn_exit;
         private PictureBox pictureBox1;
         private Label lbl_Heading_upload;
+        private ToolStripMenuItem dateiToolStripMenuItem1;
     }
 }

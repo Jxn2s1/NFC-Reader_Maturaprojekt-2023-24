@@ -30,14 +30,12 @@
         {
             cmd_upload_DB = new Button();
             Grid_Nfc_Upload = new DataGridView();
-            cmd_download_DB = new Button();
             menuStrip1 = new MenuStrip();
             dateiToolStripMenuItem = new ToolStripMenuItem();
             reloadToolStripMenuItem = new ToolStripMenuItem();
             backToolStripMenuItem = new ToolStripMenuItem();
             exitToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
-            Delete_DB = new Button();
             cmd_Delete = new Button();
             cmd_Delete_All = new Button();
             btn_back = new Button();
@@ -54,7 +52,7 @@
             cmd_upload_DB.Name = "cmd_upload_DB";
             cmd_upload_DB.Size = new Size(75, 40);
             cmd_upload_DB.TabIndex = 0;
-            cmd_upload_DB.Text = "Upload DB";
+            cmd_upload_DB.Text = "Next";
             cmd_upload_DB.UseVisualStyleBackColor = true;
             cmd_upload_DB.Click += cmd_upload_DB_Click;
             // 
@@ -66,16 +64,6 @@
             Grid_Nfc_Upload.RowTemplate.Height = 25;
             Grid_Nfc_Upload.Size = new Size(350, 250);
             Grid_Nfc_Upload.TabIndex = 1;
-            // 
-            // cmd_download_DB
-            // 
-            cmd_download_DB.Location = new Point(698, 402);
-            cmd_download_DB.Name = "cmd_download_DB";
-            cmd_download_DB.Size = new Size(90, 36);
-            cmd_download_DB.TabIndex = 2;
-            cmd_download_DB.Text = "Download DB";
-            cmd_download_DB.UseVisualStyleBackColor = true;
-            cmd_download_DB.Click += cmd_download_DB_Click;
             // 
             // menuStrip1
             // 
@@ -120,23 +108,13 @@
             helpToolStripMenuItem.Size = new Size(44, 20);
             helpToolStripMenuItem.Text = "Help";
             // 
-            // Delete_DB
-            // 
-            Delete_DB.Location = new Point(698, 360);
-            Delete_DB.Name = "Delete_DB";
-            Delete_DB.Size = new Size(90, 36);
-            Delete_DB.TabIndex = 4;
-            Delete_DB.Text = "Delete DB";
-            Delete_DB.UseVisualStyleBackColor = true;
-            Delete_DB.Click += Delete_DB_Click;
-            // 
             // cmd_Delete
             // 
             cmd_Delete.Location = new Point(380, 141);
             cmd_Delete.Name = "cmd_Delete";
             cmd_Delete.Size = new Size(75, 40);
             cmd_Delete.TabIndex = 5;
-            cmd_Delete.Text = "Löschen";
+            cmd_Delete.Text = "Delete";
             cmd_Delete.UseVisualStyleBackColor = true;
             cmd_Delete.Click += cmd_Delete_Click;
             // 
@@ -146,7 +124,7 @@
             cmd_Delete_All.Name = "cmd_Delete_All";
             cmd_Delete_All.Size = new Size(75, 40);
             cmd_Delete_All.TabIndex = 6;
-            cmd_Delete_All.Text = "Alle Löschen";
+            cmd_Delete_All.Text = "Delete All";
             cmd_Delete_All.UseVisualStyleBackColor = true;
             cmd_Delete_All.Click += cmd_Delete_All_Click;
             // 
@@ -190,8 +168,6 @@
             Controls.Add(btn_back);
             Controls.Add(cmd_Delete_All);
             Controls.Add(cmd_Delete);
-            Controls.Add(Delete_DB);
-            Controls.Add(cmd_download_DB);
             Controls.Add(Grid_Nfc_Upload);
             Controls.Add(cmd_upload_DB);
             Controls.Add(menuStrip1);
@@ -210,14 +186,12 @@
 
         private Button cmd_upload_DB;
         private DataGridView Grid_Nfc_Upload;
-        private Button cmd_download_DB;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem dateiToolStripMenuItem;
         private ToolStripMenuItem reloadToolStripMenuItem;
         private ToolStripMenuItem backToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem;
         private ToolStripMenuItem helpToolStripMenuItem;
-        private Button Delete_DB;
         private Button cmd_Delete;
         private Button cmd_Delete_All;
         private Button btn_back;

@@ -80,14 +80,6 @@ namespace NFC_Reader
             MessageBox.Show("Data inserted into the database successfully.");
         }
 
-        private void cmd_download_DB_Click(object sender, EventArgs e)
-        {
-            DataTable dataTable = database.GetNFCChips();
-            foreach (DataRow row in dataTable.Rows)
-            {
-                Grid_Nfc_Upload.Rows.Add(row["Id"], row["ChipData"]);
-            }
-        }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -105,10 +97,6 @@ namespace NFC_Reader
             Close();
         }
 
-        private void Delete_DB_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void cmd_Delete_Click(object sender, EventArgs e)
         {
