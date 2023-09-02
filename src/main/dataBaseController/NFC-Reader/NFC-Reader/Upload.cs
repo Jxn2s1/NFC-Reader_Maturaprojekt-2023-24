@@ -6,7 +6,6 @@ namespace NFC_Reader
 {
     public partial class Upload : Form
     {
-        private const string ConnectionString = "Server=localhost;Database=nfc-reader_Maturaprojekt;Uid=root;Pwd=\"\";"; // Hier deine Verbindungszeichenfolge einfügen
         private Database database;
         private DataGridView sourceDataGridView;
 
@@ -19,7 +18,7 @@ namespace NFC_Reader
         public Upload(DataGridView sourceDataGridView)
         {
             InitializeComponent();
-            database = new Database(ConnectionString);
+            database = new Database();
             this.sourceDataGridView = sourceDataGridView;
             InitializeDataGridView();
             LoadDataFromDatabase();
@@ -89,7 +88,10 @@ namespace NFC_Reader
                     {
                         id = Convert.ToInt32(row.Cells[0].Value);
                         chipData = cell.Value.ToString();
-                        database.InsertNFCChip(id, chipData);
+
+                        //BItte anschaun
+                        DataTable dataTable = new DataTable();
+                        database.InsertNFCChip(dataTable);
                         i++;
                     }
                 }

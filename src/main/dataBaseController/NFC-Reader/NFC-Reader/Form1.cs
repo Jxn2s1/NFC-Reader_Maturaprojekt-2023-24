@@ -9,14 +9,12 @@ namespace NFC_Reader
 {
     public partial class Form1 : Form
     {
-        private const string ConnectionString = "Server=localhost;Database=nfc-reader_Maturaprojekt;Uid=root;Pwd=\"\";"; // Hier deine Verbindungszeichenfolge einfügen
         private Database database;
         private JsonInput jsonInput;
 
 
 
         int id_grid;
-        int id;
         string data;
         string chipData;
 
@@ -24,7 +22,7 @@ namespace NFC_Reader
         public Form1()
         {
             InitializeComponent();
-            database = new Database(ConnectionString);
+            database = new Database();
             jsonInput = new JsonInput();
             InitializeDataGridView();
             LoadJsonData();
@@ -161,6 +159,16 @@ namespace NFC_Reader
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

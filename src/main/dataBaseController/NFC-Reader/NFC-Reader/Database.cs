@@ -1,66 +1,73 @@
-﻿using MySql.Data.MySqlClient;
+﻿using System;
 using System.Data;
-
+using System.Xml.Linq;
+using MongoDB.Bson;
+using MongoDB.Driver;
 
 namespace NFC_Reader
 {
     internal class Database
     {
-        private readonly string ConnectionString;
+        private string connectionString = "mongodb+srv://maturaprojektnfcreader:nfcchipssindcool@nfc-reader.efvbzbx.mongodb.net/";
+        private MongoClient client;
+        private IMongoDatabase database;
+        private IMongoCollection<NfcData> collection;
 
-        public Database(string connectionString)
+        public Database()
         {
-            ConnectionString = connectionString;
+            client = new MongoClient(connectionString);
+            database = client.GetDatabase("nfc-reader");
+            collection = database.GetCollection<NfcData>("nfc-collection");
         }
-
-        public void InsertNFCChip(int id, string chipData)
+        public void InsertNFCChip(DataTable dataTable)
         {
-            using (MySqlConnection connection = new MySqlConnection(ConnectionString))
+            foreach (DataRow row in dataTable.Rows)
             {
-                connection.Open();
-
-                string insertQuery = "INSERT INTO NFCChips (Id, ChipData) VALUES (@Id, @ChipData)";
-                using (MySqlCommand command = new MySqlCommand(insertQuery, connection))
+                var nfcData = new NfcData
                 {
-                    command.Parameters.AddWithValue("@Id", id);
-                    command.Parameters.AddWithValue("@ChipData", chipData);
-                    command.ExecuteNonQuery();
-                }
+                    Number = Convert.ToInt32(row["Number"]),
+                    ChipData = row["ChipData"].ToString()
+                };
+
+                collection.InsertOne(nfcData);
             }
         }
-        public DataTable GetNFCChips() //Neu hinzugefügt: Ruft Daten aus der Datenbank ab
+
+        public DataTable GetNFCChips()
         {
+            // Retrieve all documents from the collection
+            var documents = collection.Find(FilterDefinition<NfcData>.Empty).ToList();
+
+            // Create a DataTable to store the data
             DataTable dataTable = new DataTable();
 
-            using (MySqlConnection connection = new MySqlConnection(ConnectionString))
+            // Define columns in the DataTable (adjust column names and types as needed)
+            dataTable.Columns.Add("Id", typeof(ObjectId));
+            dataTable.Columns.Add("Number", typeof(int));
+            dataTable.Columns.Add("ChipData", typeof(string));
+
+            // Populate the DataTable with data from MongoDB
+            foreach (var document in documents)
             {
-                connection.Open();
-
-                string selectQuery = "SELECT * FROM NFCChips";
-                using (MySqlCommand command = new MySqlCommand(selectQuery, connection))
-                {
-                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
-                    {
-                        adapter.Fill(dataTable);
-                    }
-                }
+                dataTable.Rows.Add(document.Id, document.Number, document.ChipData);
             }
-
             return dataTable;
         }
-        public void DeleteAllNFCChip()
-        {
-            using (MySqlConnection connection = new MySqlConnection(ConnectionString))
-            {
-                connection.Open();
 
-                string deleteQuery = "DELETE FROM NFCChips";
-                using (MySqlCommand command = new MySqlCommand(deleteQuery, connection))
-                {
-                    command.ExecuteNonQuery();
-                }
-            }
+        public void DeleteAllNFCChip() 
+        {
+            database.DropCollection("nfc-collection");
+            database = client.GetDatabase("nfc-reader");
+            collection = database.GetCollection<NfcData>("nfc-collection");
+            Console.WriteLine("The Database is now empty!\n");
         }
 
     }
+}
+
+class NfcData
+{
+    public ObjectId Id { get; set; } // Include _id property
+    public int Number { get; set; }
+    public string ChipData { get; set; }
 }

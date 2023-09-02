@@ -40,9 +40,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
-            "MySql.Data": {
+            "MongoDB.Driver": {
               "target": "Package",
-              "version": "[8.1.0, )"
+              "version": "[2.21.0, )"
             }
           },
           "imports": [
