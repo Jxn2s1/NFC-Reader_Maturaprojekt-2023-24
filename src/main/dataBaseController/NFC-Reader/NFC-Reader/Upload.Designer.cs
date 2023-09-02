@@ -52,7 +52,7 @@
             cmd_upload_DB.Name = "cmd_upload_DB";
             cmd_upload_DB.Size = new Size(75, 40);
             cmd_upload_DB.TabIndex = 0;
-            cmd_upload_DB.Text = "Next";
+            cmd_upload_DB.Text = "Upload";
             cmd_upload_DB.UseVisualStyleBackColor = true;
             cmd_upload_DB.Click += cmd_upload_DB_Click;
             // 

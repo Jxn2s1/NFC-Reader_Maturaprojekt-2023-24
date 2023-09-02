@@ -32,6 +32,7 @@
             dateiToolStripMenuItem = new ToolStripMenuItem();
             reloadToolStripMenuItem = new ToolStripMenuItem();
             exitToolStripMenuItem = new ToolStripMenuItem();
+            dateiToolStripMenuItem1 = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
             creatorToolStripMenuItem = new ToolStripMenuItem();
             cmd_Website = new Button();
@@ -42,7 +43,6 @@
             btn_exit = new Button();
             pictureBox1 = new PictureBox();
             lbl_Heading_upload = new Label();
-            dateiToolStripMenuItem1 = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grid_Nfc).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -67,16 +67,22 @@
             // reloadToolStripMenuItem
             // 
             reloadToolStripMenuItem.Name = "reloadToolStripMenuItem";
-            reloadToolStripMenuItem.Size = new Size(180, 22);
+            reloadToolStripMenuItem.Size = new Size(110, 22);
             reloadToolStripMenuItem.Text = "Reload";
             reloadToolStripMenuItem.Click += reloadToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(180, 22);
+            exitToolStripMenuItem.Size = new Size(110, 22);
             exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
+            // 
+            // dateiToolStripMenuItem1
+            // 
+            dateiToolStripMenuItem1.Name = "dateiToolStripMenuItem1";
+            dateiToolStripMenuItem1.Size = new Size(110, 22);
+            dateiToolStripMenuItem1.Text = "Datei";
             // 
             // helpToolStripMenuItem
             // 
@@ -88,7 +94,7 @@
             // creatorToolStripMenuItem
             // 
             creatorToolStripMenuItem.Name = "creatorToolStripMenuItem";
-            creatorToolStripMenuItem.Size = new Size(180, 22);
+            creatorToolStripMenuItem.Size = new Size(113, 22);
             creatorToolStripMenuItem.Text = "Creator";
             creatorToolStripMenuItem.Click += creatorToolStripMenuItem_Click;
             // 
@@ -128,7 +134,7 @@
             cmd_Upload_Database.Name = "cmd_Upload_Database";
             cmd_Upload_Database.Size = new Size(75, 40);
             cmd_Upload_Database.TabIndex = 7;
-            cmd_Upload_Database.Text = "Upload";
+            cmd_Upload_Database.Text = "Next";
             cmd_Upload_Database.UseVisualStyleBackColor = true;
             cmd_Upload_Database.Click += cmd_Upload_Database_Click;
             // 
@@ -170,12 +176,6 @@
             lbl_Heading_upload.Size = new Size(154, 37);
             lbl_Heading_upload.TabIndex = 11;
             lbl_Heading_upload.Text = "Lokal Data";
-            // 
-            // dateiToolStripMenuItem1
-            // 
-            dateiToolStripMenuItem1.Name = "dateiToolStripMenuItem1";
-            dateiToolStripMenuItem1.Size = new Size(180, 22);
-            dateiToolStripMenuItem1.Text = "Datei";
             // 
             // Form1
             // 
