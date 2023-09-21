@@ -32,23 +32,11 @@ public class Main {
         }
         scanner.close();
 
-        try {
-            //Opens the DataBaseController.exe and allows to access the Data from the Database
-            DataBaseController.openController();
-        }
+        //Opens the DataBaseController.exe and allows to access the Data from the Database
+        DataBaseController.openController();
 
-        catch (Exception e) {
-            System.out.println("Error: " + e);
-        }
-
-        try {
-            //Automatically opens the GitHub Pages site and shows the Web Interface
-            OpenWebInterface.open();
-        }
-
-        catch (Exception e) {
-            System.out.println("Error: " + e);
-        }
+        //Automatically opens the GitHub Pages site and shows the Web Interface
+        OpenWebInterface.open();
 
     }
 }
