@@ -12,7 +12,7 @@ namespace NFC_Reader
         private Database database;
         private JsonInput jsonInput;
 
-
+        
 
         int id_grid;
         string data;
@@ -22,7 +22,16 @@ namespace NFC_Reader
         public Form1()
         {
             InitializeComponent();
-            database = new Database();
+
+            string server = "127.0.0.1"; // Your MySQL server address
+            string databasename = "nfc-reader_maturaprojekt"; // Your MySQL database name
+            string username = "root"; // Your MySQL username
+            string password = ""; // Your MySQL password
+
+            // Build the connection string
+            string connectionString = $"Server={server};Database={databasename};User ID={username};Password={password};";
+
+            database = new Database(connectionString);
             jsonInput = new JsonInput();
             InitializeDataGridView();
             LoadJsonData();
@@ -137,5 +146,9 @@ namespace NFC_Reader
             Application.Exit();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

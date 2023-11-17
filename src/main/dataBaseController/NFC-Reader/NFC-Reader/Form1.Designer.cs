@@ -194,6 +194,7 @@
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Lokal Data";
+            Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)grid_Nfc).EndInit();
