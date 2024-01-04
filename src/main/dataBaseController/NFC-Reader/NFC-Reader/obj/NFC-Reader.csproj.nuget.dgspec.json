@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj": {}
+    "C:\\Users\\jonas\\Windows-Docs\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj": {
+    "C:\\Users\\jonas\\Windows-Docs\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj",
+        "projectUniqueName": "C:\\Users\\jonas\\Windows-Docs\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj",
         "projectName": "NFC-Reader",
-        "projectPath": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj",
+        "projectPath": "C:\\Users\\jonas\\Windows-Docs\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj",
         "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\obj\\",
+        "outputPath": "C:\\Users\\jonas\\Windows-Docs\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,13 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.21.0, )"
+<<<<<<< Updated upstream
+=======
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+>>>>>>> Stashed changes
             }
           },
           "imports": [
@@ -64,7 +71,11 @@
               "privateAssets": "none"
             }
           },
+<<<<<<< Updated upstream
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
         }
       }
     }

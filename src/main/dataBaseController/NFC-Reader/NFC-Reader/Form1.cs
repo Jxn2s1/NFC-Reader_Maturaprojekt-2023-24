@@ -22,7 +22,11 @@ namespace NFC_Reader
         public Form1()
         {
             InitializeComponent();
+<<<<<<< Updated upstream
             database = new Database();
+=======
+            //database = new Database();
+>>>>>>> Stashed changes
             jsonInput = new JsonInput();
             InitializeDataGridView();
             LoadJsonData();

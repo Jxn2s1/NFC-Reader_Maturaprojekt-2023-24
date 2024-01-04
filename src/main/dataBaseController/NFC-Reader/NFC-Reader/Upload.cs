@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using MongoDB.Driver.Core.Configuration;
+using System.Data;
 using System.Windows.Forms;
 
 
@@ -6,8 +7,11 @@ namespace NFC_Reader
 {
     public partial class Upload : Form
     {
+        private const string connectionString = "YourConnectionString";
         private Database database;
         private DataGridView sourceDataGridView;
+
+        
 
         int id_grid;
         int id;
@@ -34,7 +38,7 @@ namespace NFC_Reader
         }
         private void LoadDataFromDatabase() //Lädt Daten aus der Datenbank und zeigt sie in der DataGridView an
         {
-            DataTable dataTable = database.GetNFCChips();
+            DataTable dataTable = database.LoadNFC("YourTableName");
             foreach (DataRow row in dataTable.Rows)
             {
                 Grid_Nfc_Upload.Rows.Add(row["Number"], row["ChipData"]);
@@ -74,8 +78,8 @@ namespace NFC_Reader
 
         private void cmd_upload_DB_Click(object sender, EventArgs e)
         {
-            database.DeleteAllNFCChip();
-            database.InsertNFCChip(Grid_Nfc_Upload);
+            database.DeleteAllFromDatabase("YourTableName");
+            database.InsertNFC(Grid_Nfc_Upload, "YourTAbleName");
 
             MessageBox.Show("Data inserted into the database successfully.");
         }

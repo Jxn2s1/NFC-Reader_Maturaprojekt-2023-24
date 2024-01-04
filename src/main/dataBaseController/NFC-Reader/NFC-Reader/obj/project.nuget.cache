@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "2TpSY2eaqqK+ju4Lz+Cab19XVA7x2bJn2cjb783lTwBVBFzmpAEJsDiJbJrmtQzLlfngc3tWIOTUAxRCvkEOAw==",
+=======
+  "dgSpecHash": "pqUU7maAy397tp8XYCPR0dfGHyVG9uL3Ha2/nJziQ9JhwP6+7gA/l3JalSfjtD/OiOoCRuyNM/c2urO+uewY7w==",
+>>>>>>> Stashed changes
   "success": true,
-  "projectFilePath": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj",
+  "projectFilePath": "C:\\Users\\jonas\\Windows-Docs\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jonas\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
@@ -14,9 +18,20 @@
     "C:\\Users\\jonas\\.nuget\\packages\\mongodb.driver\\2.21.0\\mongodb.driver.2.21.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\mongodb.driver.core\\2.21.0\\mongodb.driver.core.2.21.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.0\\mongodb.libmongocrypt.1.8.0.nupkg.sha512",
+<<<<<<< Updated upstream
     "C:\\Users\\jonas\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+=======
+    "C:\\Users\\jonas\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512",
+>>>>>>> Stashed changes
     "C:\\Users\\jonas\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
