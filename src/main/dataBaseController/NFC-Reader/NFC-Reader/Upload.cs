@@ -7,7 +7,7 @@ namespace NFC_Reader
 {
     public partial class Upload : Form
     {
-        private const string connectionString = "YourConnectionString";
+        private const string connectionString = "Server=JONAS-OMEN-BY-H;Database=NFCReader;Trusted_Connection=True;";
         private Database database;
         private DataGridView sourceDataGridView;
 
@@ -22,7 +22,7 @@ namespace NFC_Reader
         public Upload(DataGridView sourceDataGridView)
         {
             InitializeComponent();
-            database = new Database();
+            database = new Database(connectionString);
             this.sourceDataGridView = sourceDataGridView;
             InitializeDataGridView();
             LoadDataFromDatabase();
@@ -38,10 +38,10 @@ namespace NFC_Reader
         }
         private void LoadDataFromDatabase() //Lädt Daten aus der Datenbank und zeigt sie in der DataGridView an
         {
-            DataTable dataTable = database.LoadNFC("YourTableName");
+            DataTable dataTable = database.LoadNFC("NFCChips");
             foreach (DataRow row in dataTable.Rows)
             {
-                Grid_Nfc_Upload.Rows.Add(row["Number"], row["ChipData"]);
+                Grid_Nfc_Upload.Rows.Add(row["Id"], row["ChipData"]);
             }
         }
         private void LoadDataFromGrid()
@@ -78,8 +78,8 @@ namespace NFC_Reader
 
         private void cmd_upload_DB_Click(object sender, EventArgs e)
         {
-            database.DeleteAllFromDatabase("YourTableName");
-            database.InsertNFC(Grid_Nfc_Upload, "YourTAbleName");
+            database.DeleteAllFromDatabase("NFCChips");
+            database.InsertNFC(Grid_Nfc_Upload, "NFCChips");
 
             MessageBox.Show("Data inserted into the database successfully.");
         }

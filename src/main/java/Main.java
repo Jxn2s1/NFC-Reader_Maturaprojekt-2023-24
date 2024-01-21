@@ -35,8 +35,8 @@ public class Main {
         //Opens the DataBaseController.exe and allows to access the Data from the Database
         DataBaseController.openController();
 
-        //Automatically opens the GitHub Pages site and shows the Web Interface
-        OpenWebInterface.open();
+        //Opens the WebController.exe and allows to access the Data from the Database
+        WebController.openController();
 
     }
 }

@@ -185,8 +185,6 @@
           }
         }
       },
-<<<<<<< Updated upstream
-=======
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -222,7 +220,6 @@
           }
         }
       },
->>>>>>> Stashed changes
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -254,8 +251,6 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-<<<<<<< Updated upstream
-=======
       "System.Data.SqlClient/4.8.5": {
         "type": "package",
         "dependencies": {
@@ -284,7 +279,6 @@
           }
         }
       },
->>>>>>> Stashed changes
       "System.Memory/4.5.5": {
         "type": "package",
         "compile": {
@@ -605,8 +599,6 @@
         "runtimes/win/native/mongocrypt.dll"
       ]
     },
-<<<<<<< Updated upstream
-=======
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "sha512": "9kyFSIdN3T0qjDQ2R0HRXYIhS3l5psBzQi6qqhdLz+SzFyEy4sVxNOke+yyYv8Cu8rPER12c3RDjLT8wF3WBYQ==",
       "type": "package",
@@ -670,7 +662,6 @@
         "version.txt"
       ]
     },
->>>>>>> Stashed changes
     "SharpCompress/0.30.1": {
       "sha512": "XqD4TpfyYGa7QTPzaGlMVbcecKnXy4YmYLDWrU+JIj7IuRNl7DH2END+Ll7ekWIY8o3dAMWLFDE1xdhfIWD1nw==",
       "type": "package",
@@ -738,8 +729,6 @@
         "version.txt"
       ]
     },
-<<<<<<< Updated upstream
-=======
     "System.Data.SqlClient/4.8.5": {
       "sha512": "fRqxut4lrndPHrXD+ht1XRmCL3obuKldm4XjCRYS9p5f7FSR7shBxAwTkDrpFMsHC9BhNgjjmUtiIjvehn5zkg==",
       "type": "package",
@@ -826,7 +815,6 @@
         "version.txt"
       ]
     },
->>>>>>> Stashed changes
     "System.Memory/4.5.5": {
       "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
       "type": "package",
@@ -1004,12 +992,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-<<<<<<< Updated upstream
-      "MongoDB.Driver >= 2.21.0"
-=======
       "MongoDB.Driver >= 2.21.0",
       "System.Data.SqlClient >= 4.8.5"
->>>>>>> Stashed changes
     ]
   },
   "packageFolders": {
@@ -1018,11 +1002,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jonas\\Windows-Docs\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj",
+      "projectUniqueName": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj",
       "projectName": "NFC-Reader",
-      "projectPath": "C:\\Users\\jonas\\Windows-Docs\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj",
+      "projectPath": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\NFC-Reader.csproj",
       "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jonas\\Windows-Docs\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\obj\\",
+      "outputPath": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\dataBaseController\\NFC-Reader\\NFC-Reader\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1054,13 +1038,10 @@
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[2.21.0, )"
-<<<<<<< Updated upstream
-=======
           },
           "System.Data.SqlClient": {
             "target": "Package",
             "version": "[4.8.5, )"
->>>>>>> Stashed changes
           }
         },
         "imports": [
@@ -1082,12 +1063,20 @@
             "privateAssets": "none"
           }
         },
-<<<<<<< Updated upstream
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Data.SqlClient' 4.8.5 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
+      "libraryId": "System.Data.SqlClient",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

@@ -22,11 +22,7 @@ namespace NFC_Reader
         public Form1()
         {
             InitializeComponent();
-<<<<<<< Updated upstream
-            database = new Database();
-=======
             //database = new Database();
->>>>>>> Stashed changes
             jsonInput = new JsonInput();
             InitializeDataGridView();
             LoadJsonData();
@@ -138,7 +134,7 @@ namespace NFC_Reader
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Close();
         }
 
     }

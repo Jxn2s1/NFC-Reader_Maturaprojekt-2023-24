@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NFC_Reader
-build_property.ProjectDir = C:\Users\jonas\Windows-Docs\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\
+build_property.ProjectDir = C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\dataBaseController\NFC-Reader\NFC-Reader\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
