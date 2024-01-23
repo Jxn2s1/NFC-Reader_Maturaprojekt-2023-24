@@ -17,59 +17,59 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = webController
 build_property.RootNamespace = webController
-build_property.ProjectDir = C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\webController\
+build_property.ProjectDir = C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\RazerPages\webController\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\webController
+build_property.MSBuildProjectDirectory = C:\Projects\Maturaprojekt\NFC-Reader_Maturaprojekt-2023-24\src\main\RazerPages\webController
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/webController/Pages/Error.cshtml]
+[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/RazerPages/webController/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/webController/Pages/Index.cshtml]
+[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/RazerPages/webController/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/webController/Pages/NFCChips/Create.cshtml]
+[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/RazerPages/webController/Pages/NFCChips/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTkZDQ2hpcHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/webController/Pages/NFCChips/Delete.cshtml]
+[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/RazerPages/webController/Pages/NFCChips/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTkZDQ2hpcHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/webController/Pages/NFCChips/Details.cshtml]
+[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/RazerPages/webController/Pages/NFCChips/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTkZDQ2hpcHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/webController/Pages/NFCChips/Edit.cshtml]
+[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/RazerPages/webController/Pages/NFCChips/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTkZDQ2hpcHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/webController/Pages/NFCChips/Index.cshtml]
+[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/RazerPages/webController/Pages/NFCChips/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTkZDQ2hpcHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/webController/Pages/Privacy.cshtml]
+[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/RazerPages/webController/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/webController/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/RazerPages/webController/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/webController/Pages/_ViewImports.cshtml]
+[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/RazerPages/webController/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/webController/Pages/_ViewStart.cshtml]
+[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/RazerPages/webController/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/webController/Pages/Shared/_Layout.cshtml]
+[C:/Projects/Maturaprojekt/NFC-Reader_Maturaprojekt-2023-24/src/main/RazerPages/webController/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-l3004wvz3r

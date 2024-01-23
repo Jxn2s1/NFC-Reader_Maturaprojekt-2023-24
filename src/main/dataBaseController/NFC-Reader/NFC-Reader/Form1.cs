@@ -1,5 +1,6 @@
 
 using Microsoft.VisualBasic;
+using Microsoft.Win32;
 using System.Diagnostics;
 
 
@@ -134,7 +135,55 @@ namespace NFC_Reader
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
+            OpenURLInChrome("https://localhost:7060/");
             Close();
+        }
+
+        private void OpenURLInChrome(string url)
+        {
+            // Specify the path to the Chrome executable
+            string chromePath = GetChromePath();
+
+            if (chromePath != null)
+            {
+                Process.Start(chromePath, url);
+            }
+            else
+            {
+                Console.WriteLine("Google Chrome is not installed on this machine.");
+                // Handle the case where Chrome is not installed
+                OpenURL(url);
+            }
+        }
+
+        private string GetChromePath()
+        {
+            string key = @"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe";
+            RegistryKey registryKey = Registry.LocalMachine.OpenSubKey(key, false);
+
+            if (registryKey != null)
+            {
+                // Get the path to the Chrome executable
+                string chromePath = (string)registryKey.GetValue(null, null);
+                return chromePath;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        private void OpenURL(string url)
+        {
+            string key = @"htmlfile\shell\open\command";
+            RegistryKey registryKey = Registry.ClassesRoot.OpenSubKey(key, false);
+            // Get the default browser path on the system
+            string Default_Browser_Path = ((string)registryKey.GetValue(null, null)).Split('"')[1];
+
+            Process p = new Process();
+            p.StartInfo.FileName = Default_Browser_Path;
+            p.StartInfo.Arguments = url;
+            p.Start();
         }
 
     }

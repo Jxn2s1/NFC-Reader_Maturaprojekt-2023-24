@@ -2,7 +2,7 @@ import java.io.IOException;
 
 public class WebController {
     public static void openController() {
-        String exePath = "src/main/webController/webController/bin/Debug/net8.0/webController.exe";
+        String exePath = "src/main/webController/RazerPages/webController/bin/Debug/net8.0/webController.exe";
 
         try {
             ProcessBuilder processBuilder = new ProcessBuilder(exePath);

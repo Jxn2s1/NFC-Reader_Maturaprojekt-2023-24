@@ -7998,11 +7998,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\webController\\webController.csproj",
+      "projectUniqueName": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\RazerPages\\webController\\webController.csproj",
       "projectName": "webController",
-      "projectPath": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\webController\\webController.csproj",
+      "projectPath": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\RazerPages\\webController\\webController.csproj",
       "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\webController\\obj\\",
+      "outputPath": "C:\\Projects\\Maturaprojekt\\NFC-Reader_Maturaprojekt-2023-24\\src\\main\\RazerPages\\webController\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config",

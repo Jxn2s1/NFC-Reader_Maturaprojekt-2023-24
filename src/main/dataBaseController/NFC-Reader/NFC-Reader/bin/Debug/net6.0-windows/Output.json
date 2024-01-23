@@ -1,1 +1,22 @@
-{}
+{
+  "Data 1" : {
+    "outputString" : "6907035a",
+    "numberOfData" : 1
+  },
+  "Data 2" : {
+    "outputString" : "6907035a",
+    "numberOfData" : 2
+  },
+  "Data 3" : {
+    "outputString" : "69b0ca4a",
+    "numberOfData" : 3
+  },
+  "Data 4" : {
+    "outputString" : "6935f03a",
+    "numberOfData" : 4
+  },
+  "Data 5" : {
+    "outputString" : "69b0ca4a",
+    "numberOfData" : 5
+  }
+}
