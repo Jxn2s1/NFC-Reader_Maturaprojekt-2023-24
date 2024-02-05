@@ -11,12 +11,13 @@ namespace NFC_Reader
         private Database database;
         private DataGridView sourceDataGridView;
 
-        
+
 
         int id_grid;
         int id;
         string data;
         string chipData;
+        DateTime timeStamp;
 
         Form1 form1 = new Form1();
         public Upload(DataGridView sourceDataGridView)
@@ -34,14 +35,14 @@ namespace NFC_Reader
         {
             Grid_Nfc_Upload.Columns.Add("Column1", "Id");
             Grid_Nfc_Upload.Columns.Add("Column2", "Daten");
-            Grid_Nfc_Upload.Columns.Add("Column3", "Neu");
+            Grid_Nfc_Upload.Columns.Add("Column3", "TimeStamp");
         }
         private void LoadDataFromDatabase() //Lädt Daten aus der Datenbank und zeigt sie in der DataGridView an
         {
             DataTable dataTable = database.LoadNFC("NFCChips");
             foreach (DataRow row in dataTable.Rows)
             {
-                Grid_Nfc_Upload.Rows.Add(row["Id"], row["ChipData"]);
+                Grid_Nfc_Upload.Rows.Add(row["Id"], row["ChipData"], row["TimeStamp"]);
             }
         }
         private void LoadDataFromGrid()
@@ -53,7 +54,8 @@ namespace NFC_Reader
                 {
                     id = Convert.ToInt32(row.Cells[0].Value);
                     chipData = row.Cells[1].Value.ToString();
-                    Grid_Nfc_Upload.Rows.Add(id, chipData, "Neu");
+                    timeStamp = DateTime.Now;
+                    Grid_Nfc_Upload.Rows.Add(id, chipData, timeStamp);
 
                 }
             }
@@ -81,7 +83,7 @@ namespace NFC_Reader
             database.DeleteAllFromDatabase("NFCChips");
             database.InsertNFC(Grid_Nfc_Upload, "NFCChips");
 
-            MessageBox.Show("Data inserted into the database successfully.");
+
         }
 
 

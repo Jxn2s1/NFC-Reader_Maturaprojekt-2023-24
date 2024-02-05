@@ -48,7 +48,7 @@
             // 
             // cmd_upload_DB
             // 
-            cmd_upload_DB.Location = new Point(380, 212);
+            cmd_upload_DB.Location = new Point(430, 212);
             cmd_upload_DB.Name = "cmd_upload_DB";
             cmd_upload_DB.Size = new Size(75, 40);
             cmd_upload_DB.TabIndex = 0;
@@ -62,7 +62,7 @@
             Grid_Nfc_Upload.Location = new Point(25, 75);
             Grid_Nfc_Upload.Name = "Grid_Nfc_Upload";
             Grid_Nfc_Upload.RowTemplate.Height = 25;
-            Grid_Nfc_Upload.Size = new Size(350, 250);
+            Grid_Nfc_Upload.Size = new Size(400, 250);
             Grid_Nfc_Upload.TabIndex = 1;
             // 
             // menuStrip1
@@ -110,7 +110,7 @@
             // 
             // cmd_Delete
             // 
-            cmd_Delete.Location = new Point(380, 141);
+            cmd_Delete.Location = new Point(430, 141);
             cmd_Delete.Name = "cmd_Delete";
             cmd_Delete.Size = new Size(75, 40);
             cmd_Delete.TabIndex = 5;
@@ -120,7 +120,7 @@
             // 
             // cmd_Delete_All
             // 
-            cmd_Delete_All.Location = new Point(380, 75);
+            cmd_Delete_All.Location = new Point(430, 75);
             cmd_Delete_All.Name = "cmd_Delete_All";
             cmd_Delete_All.Size = new Size(75, 40);
             cmd_Delete_All.TabIndex = 6;
@@ -130,7 +130,7 @@
             // 
             // btn_back
             // 
-            btn_back.Location = new Point(380, 285);
+            btn_back.Location = new Point(430, 285);
             btn_back.Name = "btn_back";
             btn_back.Size = new Size(75, 40);
             btn_back.TabIndex = 7;

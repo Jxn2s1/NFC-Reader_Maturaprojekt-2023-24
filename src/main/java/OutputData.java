@@ -27,7 +27,6 @@ public class OutputData {
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
 
         File outputFile = new File("src/main/dataBaseController/NFC-Reader/NFC-Reader/bin/Debug/net6.0-windows/Output.json");
-        //File outputFile = new File("src/main/resources/Output.json");
 
         try {
             ObjectNode jsonNode;
@@ -50,7 +49,7 @@ public class OutputData {
         }
     }
 
-    //Clears the Output.json (is only used once before everything else
+    //Clears the Output.json (is only used once before everything else)
     public void clearJsonFile() {
         File outputFile = new File("src/main/dataBaseController/NFC-Reader/NFC-Reader/bin/Debug/net6.0-windows/Output.json");
         //File outputFile = new File("src/main/resources/Output.json");

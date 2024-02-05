@@ -5,7 +5,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Daten</h1>
 
 <p>
     <a asp-page="Create">Create New</a>
@@ -14,23 +14,36 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.NFCChips[0].Id)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.NFCChips[0].ChipData)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NFCChips[0].TimeStamp)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.NFCChips) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ChipData)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.NFCChips)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChipData)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TimeStamp)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

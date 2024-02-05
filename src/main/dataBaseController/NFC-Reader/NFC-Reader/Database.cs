@@ -37,18 +37,19 @@ namespace NFC_Reader
                         if (!row.IsNewRow)
                         {
                             // Hier werden die Daten aus der DataGridView in die Datenbank gespeichert
-                            command.CommandText = $"INSERT INTO {tableName} (Id, ChipData) VALUES (@value1, @value2)";
+                            command.CommandText = $"INSERT INTO {tableName} (Id, ChipData, TimeStamp) VALUES (@value1, @value2, @value3)";
                             command.Parameters.Clear();
                             command.Parameters.AddWithValue("@value1", row.Cells["Column1"].Value);
                             command.Parameters.AddWithValue("@value2", row.Cells["Column2"].Value);
-                            
-
+                            command.Parameters.AddWithValue("@value3", row.Cells["Column3"].Value);
                             command.ExecuteNonQuery();
+
                         }
                     }
 
                     // Commit der Transaktion
                     transaction.Commit();
+                    MessageBox.Show("Data inserted into the database successfully.");
                     return true;
                 }
                 catch (Exception ex)
@@ -59,6 +60,7 @@ namespace NFC_Reader
                     {
                         // Bei einem Fehler Rollback der Transaktion
                         transaction.Rollback();
+
                     }
                     catch (Exception ex2)
                     {
@@ -102,8 +104,11 @@ namespace NFC_Reader
 
                     int rowsAffected = command.ExecuteNonQuery();
 
-                    return rowsAffected > 0; // Gibt true zurück, wenn Zeilen gelöscht wurden
+
+                    return rowsAffected > 0;
+                    // Gibt true zurück, wenn Zeilen gelöscht wurden
                 }
+
             }
             catch (Exception ex)
             {
@@ -111,9 +116,5 @@ namespace NFC_Reader
                 return false;
             }
         }
-
-
     }
 }
-
-

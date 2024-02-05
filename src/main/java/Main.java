@@ -40,11 +40,5 @@ public class Main {
 
         // Opens the DataBaseController.exe and allows to access the Data from the Database
         DataBaseController.openController();
-
-        // Opens the WebController.exe and allows to access the Data from the Database
-        // WebController.openController();
-
-        // Opens the WebPage with the Data
-        // OpenWebInterface.open();
     }
 }

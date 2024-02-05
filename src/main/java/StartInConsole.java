@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.InputEvent;
 
-//Puts the cursor in the console so it can start the program on its own
+//Puts the cursor in the console -> can start the program on its own
 public class StartInConsole {
     public static void put(){
         try {
